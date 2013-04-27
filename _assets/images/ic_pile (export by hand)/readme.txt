@@ -1,0 +1,1 @@
+For whatever reason, the Adobe Illustrator export script botches some DPI versions of these images.  Manually export them for now.

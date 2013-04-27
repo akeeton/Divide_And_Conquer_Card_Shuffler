@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<!-- Arrows -->
+	<item
+		android:drawable="@drawable/transition_arrow_w"
+		android:maxLevel="0"/>
+	<item
+		android:drawable="@drawable/transition_arrow_nw"
+		android:maxLevel="1"/>
+	<item
+		android:drawable="@drawable/transition_arrow_n"
+		android:maxLevel="2"/>
+	<item
+		android:drawable="@drawable/transition_arrow_ne"
+		android:maxLevel="3"/>
+	<item
+		android:drawable="@drawable/transition_arrow_e"
+		android:maxLevel="4"/>
+	<item
+		android:drawable="@drawable/transition_arrow_se"
+		android:maxLevel="5"/>
+	<item
+		android:drawable="@drawable/transition_arrow_s"
+		android:maxLevel="6"/>
+	<item
+		android:drawable="@drawable/transition_arrow_sw"
+		android:maxLevel="7"/>
+
+	<!-- /Arrows -->
+	<item
+		android:drawable="@drawable/ic_arrow_nothing"
+		android:maxLevel="@integer/arrows_nothing"/>
+	<item
+		android:drawable="@drawable/transition_countdown_3"
+		android:maxLevel="@integer/arrows_countdown_3"/>
+	<item
+		android:drawable="@drawable/transition_countdown_2"
+		android:maxLevel="@integer/arrows_countdown_2"/>
+	<item
+		android:drawable="@drawable/transition_countdown_1"
+		android:maxLevel="@integer/arrows_countdown_1"/>
+
+</level-list>

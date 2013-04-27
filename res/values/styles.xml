@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<style name="AppTheme" parent="@style/Theme.HoloEverywhereDark" />
+
+	<style name="TextAppearance" parent="@android:style/TextAppearance">
+		<item name="android:textSize">@dimen/text_size_large</item>
+	</style>
+
+	<style name="TextAppearance.Micro">
+		<item name="android:textSize">@dimen/text_size_micro</item>
+	</style>
+
+	<style name="TextAppearance.Small">
+		<item name="android:textSize">@dimen/text_size_small</item>
+	</style>
+
+	<style name="TextAppearance.Medium">
+		<item name="android:textSize">@dimen/text_size_medium</item>
+	</style>
+
+	<style name="TextAppearance.Large">
+		<item name="android:textSize">@dimen/text_size_large</item>
+	</style>
+
+	<style name="TextAppearance.Heading0">
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="TextAppearance.Heading1">
+		<item name="android:textSize">@dimen/text_size_medium</item>
+	</style>
+
+	<style name="LinearLayoutStyle"></style>
+
+	<style name="LinearLayoutStyle.Heading0">
+		<item name="android:layout_marginLeft">@dimen/margin_indent_level0</item>
+		<item name="android:layout_marginRight">@dimen/margin_small</item>
+		<item name="android:layout_marginTop">@dimen/margin_medium</item>
+		<item name="android:layout_marginBottom">0dp</item>
+	</style>
+
+	<style name="LinearLayoutStyle.Heading1">
+		<item name="android:layout_marginLeft">@dimen/margin_indent_level0</item>
+		<item name="android:layout_marginRight">@dimen/margin_small</item>
+		<item name="android:layout_marginTop">@dimen/margin_small</item>
+		<item name="android:layout_marginBottom">0dp</item>
+	</style>
+
+	<style name="ButtonStyle" parent="@style/ButtonHoloDark">
+		<item name="android:padding">@dimen/padding_medium</item>
+		<item name="android:textAppearance">@style/TextAppearance</item>
+		<item name="android:minWidth">@dimen/min_touchable</item>
+		<item name="android:minHeight">@dimen/min_touchable</item>
+		<item name="android:focusableInTouchMode">false</item>
+	</style>
+
+	<style name="ButtonStyle.Large">
+		<item name="android:textAppearance">@style/TextAppearance.Large</item>
+	</style>
+
+	<style name="RadioButtonStyle" parent="@style/RadioHoloDark">
+		<item name="android:textAppearance">@style/TextAppearance</item>
+		<item name="android:minWidth">@dimen/min_touchable</item>
+		<item name="android:minHeight">@dimen/min_touchable</item>
+	</style>
+
+	<style name="RadioButtonStyle.Heading0">
+		<item name="android:textAppearance">@style/TextAppearance.Heading0</item>
+	</style>
+
+	<style name="RadioButtonStyle.Heading1">
+		<item name="android:textAppearance">@style/TextAppearance.Heading1</item>
+	</style>
+
+	<style name="TextViewStyle" parent="@android:style/Widget.TextView">
+		<item name="android:textAppearance">@style/TextAppearance</item>
+		<item name="android:layout_marginLeft">0dp</item>
+		<item name="android:layout_marginRight">0dp</item>
+		<item name="android:layout_marginTop">0dp</item>
+		<item name="android:layout_marginBottom">0dp</item>
+	</style>
+
+	<style name="TextViewStyle.Medium">
+		<item name="android:textAppearance">@style/TextAppearance.Medium</item>
+	</style>
+
+	<style name="TextViewStyle.Large">
+		<item name="android:textAppearance">@style/TextAppearance.Large</item>
+	</style>
+
+	<style name="TextViewStyle.Heading0">
+		<item name="android:textAppearance">@style/TextAppearance.Heading0</item>
+	</style>
+
+	<style name="TextViewStyle.Heading1">
+		<item name="android:textAppearance">@style/TextAppearance.Heading1</item>
+	</style>
+
+	<style name="TextViewStyle.Shadow">
+		<item name="android:shadowColor">?android:attr/colorForegroundInverse</item>
+		<item name="android:shadowDx">0.5</item>
+		<item name="android:shadowDy">0.5</item>
+		<item name="android:shadowRadius">3.0</item>
+		<item name="android:paddingRight">1dp</item>
+		<item name="android:paddingBottom">1dp</item>
+	</style>
+
+	<style name="TextViewStyle.Shadow.Medium">
+		<item name="android:textAppearance">@style/TextAppearance.Medium</item>
+	</style>
+
+	<style name="TextViewStyle.Shadow.Large">
+		<item name="android:textAppearance">@style/TextAppearance.Large</item>
+	</style>
+
+	<style name="TextViewStyle.Shadow.Medium.PileNumber">
+		<item name="android:layout_marginLeft">@dimen/textviewstyle_pilenumber_margin_left</item>
+		<item name="android:layout_marginTop">@dimen/textviewstyle_pilenumber_margin_top</item>
+	</style>
+
+	<style name="TextViewStyle.Shadow.Large.PileCount">
+		<item name="android:layout_marginRight">@dimen/textviewstyle_pilecount_margin_right</item>
+		<item name="android:layout_marginBottom">@dimen/textviewstyle_pilecount_margin_bottom</item>
+	</style>
+
+	<style name="TextViewStyle.Shadow.Large.BottomAmount">
+		<item name="android:layout_marginLeft">@dimen/textviewstyle_bottomamount_margin_left</item>
+		<item name="android:layout_marginTop">@dimen/textviewstyle_bottomamount_margin_top</item>
+	</style>
+
+	<style name="EditTextStyle" parent="@style/EditTextHoloDark">
+		<item name="android:textAppearance">@style/TextAppearance</item>
+		<item name="android:minWidth">@dimen/min_touchable</item>
+		<item name="android:minHeight">@dimen/min_touchable</item>
+		<item name="android:gravity">center</item>
+		<item name="android:padding">@dimen/padding_small</item>
+	</style>
+
+	<style name="SpinnerTextViewItem" parent="@style/SpinnerItemDark">
+		<item name="android:textSize">@dimen/text_size_large</item>
+	</style>
+
+	<style name="SpinnerDropDownItem" parent="@style/DropDownItemDark">
+		<item name="android:textSize">@dimen/text_size_large</item>
+	</style>
+
+	<style name="ImageViewStyle">
+		<item name="android:scaleType">centerInside</item>
+		<item name="android:adjustViewBounds">true</item>
+	</style>
+
+</resources>

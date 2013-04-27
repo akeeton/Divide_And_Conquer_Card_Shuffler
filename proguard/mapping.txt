@@ -1,0 +1,1410 @@
+android.support.v4.app.ActivityCompatHoneycomb -> android.support.v4.app.a:
+    void invalidateOptionsMenu(android.app.Activity) -> a
+android.support.v4.app.BackStackRecord -> android.support.v4.app.b:
+    android.support.v4.app.FragmentManagerImpl mManager -> a
+    android.support.v4.app.BackStackRecord$Op mHead -> b
+    android.support.v4.app.BackStackRecord$Op mTail -> c
+    int mNumOp -> d
+    int mEnterAnim -> e
+    int mExitAnim -> f
+    int mPopEnterAnim -> g
+    int mPopExitAnim -> h
+    int mTransition -> i
+    int mTransitionStyle -> j
+    boolean mAddToBackStack -> k
+    boolean mAllowAddToBackStack -> l
+    java.lang.String mName -> m
+    boolean mCommitted -> n
+    int mIndex -> o
+    int mBreadCrumbTitleRes -> p
+    java.lang.CharSequence mBreadCrumbTitleText -> q
+    int mBreadCrumbShortTitleRes -> r
+    java.lang.CharSequence mBreadCrumbShortTitleText -> s
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    void addOp(android.support.v4.app.BackStackRecord$Op) -> a
+    android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment,java.lang.String) -> a
+    void doAddOp(int,android.support.v4.app.Fragment,java.lang.String,int) -> a
+    android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment,java.lang.String) -> b
+    android.support.v4.app.FragmentTransaction addToBackStack(java.lang.String) -> a
+    void bumpBackStackNesting(int) -> a
+    int commit() -> a
+    int commitInternal(boolean) -> a
+    void run() -> run
+    void popFromBackStack(boolean) -> b
+    java.lang.String getName() -> b
+android.support.v4.app.BackStackRecord$Op -> android.support.v4.app.c:
+    android.support.v4.app.BackStackRecord$Op next -> a
+    android.support.v4.app.BackStackRecord$Op prev -> b
+    int cmd -> c
+    android.support.v4.app.Fragment fragment -> d
+    int enterAnim -> e
+    int exitAnim -> f
+    int popEnterAnim -> g
+    int popExitAnim -> h
+    java.util.ArrayList removed -> i
+android.support.v4.app.BackStackState -> android.support.v4.app.BackStackState:
+    int[] mOps -> a
+    int mTransition -> b
+    int mTransitionStyle -> c
+    java.lang.String mName -> d
+    int mIndex -> e
+    int mBreadCrumbTitleRes -> f
+    java.lang.CharSequence mBreadCrumbTitleText -> g
+    int mBreadCrumbShortTitleRes -> h
+    java.lang.CharSequence mBreadCrumbShortTitleText -> i
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    android.support.v4.app.BackStackRecord instantiate(android.support.v4.app.FragmentManagerImpl) -> a
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.BackStackState$1 -> android.support.v4.app.d:
+    android.support.v4.app.BackStackState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.BackStackState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.Fragment -> android.support.v4.app.Fragment:
+    java.util.HashMap sClassMap -> N
+    int mState -> a
+    android.view.View mAnimatingAway -> b
+    int mStateAfterAnimating -> c
+    android.os.Bundle mSavedFragmentState -> d
+    android.util.SparseArray mSavedViewState -> e
+    int mIndex -> f
+    java.lang.String mWho -> g
+    android.os.Bundle mArguments -> h
+    android.support.v4.app.Fragment mTarget -> i
+    int mTargetIndex -> j
+    int mTargetRequestCode -> k
+    boolean mAdded -> l
+    boolean mRemoving -> m
+    boolean mResumed -> n
+    boolean mFromLayout -> o
+    boolean mInLayout -> p
+    boolean mRestored -> q
+    int mBackStackNesting -> r
+    android.support.v4.app.FragmentManagerImpl mFragmentManager -> s
+    android.support.v4.app.FragmentActivity mActivity -> t
+    int mFragmentId -> u
+    int mContainerId -> v
+    java.lang.String mTag -> w
+    boolean mHidden -> x
+    boolean mDetached -> y
+    boolean mRetainInstance -> z
+    boolean mRetaining -> A
+    boolean mHasMenu -> B
+    boolean mMenuVisible -> C
+    boolean mCalled -> D
+    int mNextAnim -> E
+    android.view.ViewGroup mContainer -> F
+    android.view.View mView -> G
+    android.view.View mInnerView -> H
+    boolean mDeferStart -> I
+    boolean mUserVisibleHint -> J
+    android.support.v4.app.LoaderManagerImpl mLoaderManager -> K
+    boolean mLoadersStarted -> L
+    boolean mCheckedForLoaderManager -> M
+    android.support.v4.app.Fragment instantiate(android.content.Context,java.lang.String) -> a
+    android.support.v4.app.Fragment instantiate(android.content.Context,java.lang.String,android.os.Bundle) -> a
+    void restoreViewState() -> a
+    void setIndex(int) -> a
+    boolean isInBackStack() -> b
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+    void setArguments(android.os.Bundle) -> a
+    android.os.Bundle getArguments() -> c
+    android.support.v4.app.FragmentActivity getActivity() -> d
+    android.content.res.Resources getResources() -> e
+    void onHiddenChanged(boolean) -> a
+    void onActivityResult(int,int,android.content.Intent) -> a
+    android.view.LayoutInflater getLayoutInflater(android.os.Bundle) -> b
+    void onInflate(android.app.Activity,android.util.AttributeSet,android.os.Bundle) -> a
+    void onAttach(android.app.Activity) -> a
+    android.view.animation.Animation onCreateAnimation(int,boolean,int) -> a
+    void onCreate(android.os.Bundle) -> c
+    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
+    void onViewCreated(android.view.View,android.os.Bundle) -> a
+    void onActivityCreated(android.os.Bundle) -> d
+    void onStart() -> f
+    void onResume() -> g
+    void onSaveInstanceState(android.os.Bundle) -> e
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onPause() -> h
+    void onStop() -> i
+    void onLowMemory() -> onLowMemory
+    void onDestroyView() -> j
+    void onDestroy() -> k
+    void initState() -> l
+    void onDetach() -> m
+    void onCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    void onPrepareOptionsMenu(android.view.Menu) -> a
+    void onDestroyOptionsMenu() -> n
+    boolean onOptionsItemSelected(android.view.MenuItem) -> a
+    void onOptionsMenuClosed(android.view.Menu) -> b
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    boolean onContextItemSelected(android.view.MenuItem) -> b
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    void performStart() -> o
+    void performStop() -> p
+    void performReallyStop() -> q
+    void performDestroyView() -> r
+android.support.v4.app.Fragment$InstantiationException -> android.support.v4.app.e:
+android.support.v4.app.Fragment$SavedState -> android.support.v4.app.Fragment$SavedState:
+    android.os.Bundle mState -> a
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.Fragment$SavedState$1 -> android.support.v4.app.f:
+    android.support.v4.app.Fragment$SavedState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.Fragment$SavedState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentActivity -> android.support.v4.app.g:
+    android.os.Handler mHandler -> a
+    android.support.v4.app.FragmentManagerImpl mFragments -> b
+    boolean mCreated -> c
+    boolean mResumed -> d
+    boolean mStopped -> e
+    boolean mReallyStopped -> f
+    boolean mRetaining -> g
+    boolean mOptionsMenuInvalidated -> h
+    boolean mCheckedForLoaderManager -> i
+    boolean mLoadersStarted -> j
+    android.support.v4.util.SparseArrayCompat mAllLoaderManagers -> k
+    android.support.v4.app.LoaderManagerImpl mLoaderManager -> l
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onBackPressed() -> onBackPressed
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreatePanelMenu(int,android.view.Menu) -> onCreatePanelMenu
+    android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet) -> onCreateView
+    void onDestroy() -> onDestroy
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void onLowMemory() -> onLowMemory
+    boolean onMenuItemSelected(int,android.view.MenuItem) -> onMenuItemSelected
+    void onPanelClosed(int,android.view.Menu) -> onPanelClosed
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void onPostResume() -> onPostResume
+    void onResumeFragments() -> a
+    boolean onPreparePanel(int,android.view.View,android.view.Menu) -> onPreparePanel
+    java.lang.Object onRetainNonConfigurationInstance() -> onRetainNonConfigurationInstance
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    void onStart() -> onStart
+    void onStop() -> onStop
+    java.lang.Object onRetainCustomNonConfigurationInstance() -> b
+    void supportInvalidateOptionsMenu() -> c
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> dump
+    void doReallyStop(boolean) -> a
+    void onReallyStop() -> d
+    void onAttachFragment(android.support.v4.app.Fragment) -> a
+    android.support.v4.app.FragmentManager getSupportFragmentManager() -> e
+    void startActivityForResult(android.content.Intent,int) -> startActivityForResult
+    void invalidateSupportFragmentIndex(int) -> a
+    android.support.v4.app.LoaderManagerImpl getLoaderManager(int,boolean,boolean) -> a
+android.support.v4.app.FragmentActivity$1 -> android.support.v4.app.h:
+    android.support.v4.app.FragmentActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+android.support.v4.app.FragmentActivity$FragmentTag -> android.support.v4.app.i:
+    int[] Fragment -> a
+android.support.v4.app.FragmentActivity$NonConfigurationInstances -> android.support.v4.app.j:
+    java.lang.Object activity -> a
+    java.lang.Object custom -> b
+    java.util.HashMap children -> c
+    java.util.ArrayList fragments -> d
+    android.support.v4.util.SparseArrayCompat loaders -> e
+android.support.v4.app.FragmentManager -> android.support.v4.app.k:
+    android.support.v4.app.FragmentTransaction beginTransaction() -> a
+    android.support.v4.app.Fragment findFragmentById(int) -> a
+    android.support.v4.app.Fragment findFragmentByTag(java.lang.String) -> a
+android.support.v4.app.FragmentManager$OnBackStackChangedListener -> android.support.v4.app.l:
+    void onBackStackChanged() -> a
+android.support.v4.app.FragmentManagerImpl -> android.support.v4.app.m:
+    boolean DEBUG -> a
+    boolean HONEYCOMB -> b
+    java.util.ArrayList mPendingActions -> c
+    java.lang.Runnable[] mTmpActions -> d
+    boolean mExecutingActions -> e
+    java.util.ArrayList mActive -> f
+    java.util.ArrayList mAdded -> g
+    java.util.ArrayList mAvailIndices -> h
+    java.util.ArrayList mBackStack -> i
+    java.util.ArrayList mCreatedMenus -> j
+    java.util.ArrayList mBackStackIndices -> k
+    java.util.ArrayList mAvailBackStackIndices -> l
+    java.util.ArrayList mBackStackChangeListeners -> m
+    int mCurState -> n
+    android.support.v4.app.FragmentActivity mActivity -> o
+    boolean mNeedMenuInvalidate -> p
+    boolean mStateSaved -> q
+    boolean mDestroyed -> r
+    java.lang.String mNoTransactionsBecause -> s
+    boolean mHavePendingDeferredStart -> t
+    android.os.Bundle mStateBundle -> u
+    android.util.SparseArray mStateArray -> v
+    java.lang.Runnable mExecCommit -> w
+    android.view.animation.Interpolator DECELERATE_QUINT -> x
+    android.view.animation.Interpolator DECELERATE_CUBIC -> y
+    android.view.animation.Interpolator ACCELERATE_QUINT -> z
+    android.view.animation.Interpolator ACCELERATE_CUBIC -> A
+    android.support.v4.app.FragmentTransaction beginTransaction() -> a
+    boolean executePendingTransactions() -> b
+    boolean popBackStackImmediate() -> c
+    void putFragment(android.os.Bundle,java.lang.String,android.support.v4.app.Fragment) -> a
+    android.support.v4.app.Fragment getFragment(android.os.Bundle,java.lang.String) -> a
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    android.view.animation.Animation makeOpenCloseAnimation(android.content.Context,float,float,float,float) -> a
+    android.view.animation.Animation makeFadeAnimation(android.content.Context,float,float) -> a
+    android.view.animation.Animation loadAnimation(android.support.v4.app.Fragment,int,boolean,int) -> a
+    void performPendingDeferredStart(android.support.v4.app.Fragment) -> a
+    void moveToState(android.support.v4.app.Fragment,int,int,int,boolean) -> a
+    void moveToState(android.support.v4.app.Fragment) -> b
+    void moveToState(int,boolean) -> a
+    void moveToState(int,int,int,boolean) -> a
+    void startPendingDeferredFragments() -> d
+    void makeActive(android.support.v4.app.Fragment) -> c
+    void makeInactive(android.support.v4.app.Fragment) -> d
+    void addFragment(android.support.v4.app.Fragment,boolean) -> a
+    void removeFragment(android.support.v4.app.Fragment,int,int) -> a
+    void hideFragment(android.support.v4.app.Fragment,int,int) -> b
+    void showFragment(android.support.v4.app.Fragment,int,int) -> c
+    void detachFragment(android.support.v4.app.Fragment,int,int) -> d
+    void attachFragment(android.support.v4.app.Fragment,int,int) -> e
+    android.support.v4.app.Fragment findFragmentById(int) -> a
+    android.support.v4.app.Fragment findFragmentByTag(java.lang.String) -> a
+    void checkStateLoss() -> s
+    void enqueueAction(java.lang.Runnable,boolean) -> a
+    int allocBackStackIndex(android.support.v4.app.BackStackRecord) -> a
+    void setBackStackIndex(int,android.support.v4.app.BackStackRecord) -> a
+    void freeBackStackIndex(int) -> b
+    boolean execPendingActions() -> e
+    void reportBackStackChanged() -> f
+    void addBackStackState(android.support.v4.app.BackStackRecord) -> b
+    boolean popBackStackState(android.os.Handler,java.lang.String,int,int) -> a
+    java.util.ArrayList retainNonConfig() -> g
+    void saveFragmentViewState(android.support.v4.app.Fragment) -> e
+    android.os.Bundle saveFragmentBasicState(android.support.v4.app.Fragment) -> f
+    android.os.Parcelable saveAllState() -> h
+    void restoreAllState(android.os.Parcelable,java.util.ArrayList) -> a
+    void attachActivity(android.support.v4.app.FragmentActivity) -> a
+    void noteStateNotSaved() -> i
+    void dispatchCreate() -> j
+    void dispatchActivityCreated() -> k
+    void dispatchStart() -> l
+    void dispatchResume() -> m
+    void dispatchPause() -> n
+    void dispatchStop() -> o
+    void dispatchReallyStop() -> p
+    void dispatchDestroy() -> q
+    void dispatchConfigurationChanged(android.content.res.Configuration) -> a
+    void dispatchLowMemory() -> r
+    boolean dispatchCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    boolean dispatchPrepareOptionsMenu(android.view.Menu) -> a
+    boolean dispatchOptionsItemSelected(android.view.MenuItem) -> a
+    boolean dispatchContextItemSelected(android.view.MenuItem) -> b
+    void dispatchOptionsMenuClosed(android.view.Menu) -> b
+    int reverseTransit(int) -> c
+    int transitToStyleIndex(int,boolean) -> b
+android.support.v4.app.FragmentManagerImpl$1 -> android.support.v4.app.n:
+    android.support.v4.app.FragmentManagerImpl this$0 -> a
+    void run() -> run
+android.support.v4.app.FragmentManagerImpl$5 -> android.support.v4.app.o:
+    android.support.v4.app.Fragment val$fragment -> a
+    android.support.v4.app.FragmentManagerImpl this$0 -> b
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+android.support.v4.app.FragmentManagerState -> android.support.v4.app.FragmentManagerState:
+    android.support.v4.app.FragmentState[] mActive -> a
+    int[] mAdded -> b
+    android.support.v4.app.BackStackState[] mBackStack -> c
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.FragmentManagerState$1 -> android.support.v4.app.p:
+    android.support.v4.app.FragmentManagerState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.FragmentManagerState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentState -> android.support.v4.app.FragmentState:
+    java.lang.String mClassName -> a
+    int mIndex -> b
+    boolean mFromLayout -> c
+    int mFragmentId -> d
+    int mContainerId -> e
+    java.lang.String mTag -> f
+    boolean mRetainInstance -> g
+    boolean mDetached -> h
+    android.os.Bundle mArguments -> i
+    android.os.Bundle mSavedFragmentState -> j
+    android.support.v4.app.Fragment mInstance -> k
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    android.support.v4.app.Fragment instantiate(android.support.v4.app.FragmentActivity) -> a
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.FragmentState$1 -> android.support.v4.app.q:
+    android.support.v4.app.FragmentState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.FragmentState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentTransaction -> android.support.v4.app.r:
+    android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment,java.lang.String) -> a
+    android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment,java.lang.String) -> b
+    android.support.v4.app.FragmentTransaction addToBackStack(java.lang.String) -> a
+    int commit() -> a
+android.support.v4.app.LoaderManager -> android.support.v4.app.s:
+    boolean hasRunningLoaders() -> a
+android.support.v4.app.LoaderManager$LoaderCallbacks -> android.support.v4.app.t:
+    android.support.v4.content.Loader onCreateLoader(int,android.os.Bundle) -> a
+    void onLoadFinished(android.support.v4.content.Loader,java.lang.Object) -> a
+    void onLoaderReset(android.support.v4.content.Loader) -> a
+android.support.v4.app.LoaderManagerImpl -> android.support.v4.app.u:
+    boolean DEBUG -> a
+    android.support.v4.util.SparseArrayCompat mLoaders -> b
+    android.support.v4.util.SparseArrayCompat mInactiveLoaders -> c
+    android.support.v4.app.FragmentActivity mActivity -> d
+    boolean mStarted -> e
+    boolean mRetaining -> f
+    void updateActivity(android.support.v4.app.FragmentActivity) -> a
+    void doStart() -> b
+    void doStop() -> c
+    void doRetain() -> d
+    void finishRetain() -> e
+    void doReportNextStart() -> f
+    void doReportStart() -> g
+    void doDestroy() -> h
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    boolean hasRunningLoaders() -> a
+android.support.v4.app.LoaderManagerImpl$LoaderInfo -> android.support.v4.app.v:
+    int mId -> a
+    android.os.Bundle mArgs -> b
+    android.support.v4.app.LoaderManager$LoaderCallbacks mCallbacks -> c
+    android.support.v4.content.Loader mLoader -> d
+    boolean mHaveData -> e
+    boolean mDeliveredData -> f
+    java.lang.Object mData -> g
+    boolean mStarted -> h
+    boolean mRetaining -> i
+    boolean mRetainingStarted -> j
+    boolean mReportNextStart -> k
+    boolean mDestroyed -> l
+    boolean mListenerRegistered -> m
+    android.support.v4.app.LoaderManagerImpl$LoaderInfo mPendingLoader -> n
+    android.support.v4.app.LoaderManagerImpl this$0 -> o
+    void start() -> a
+    void retain() -> b
+    void finishRetain() -> c
+    void reportStart() -> d
+    void stop() -> e
+    void destroy() -> f
+    void callOnLoadFinished(android.support.v4.content.Loader,java.lang.Object) -> a
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+android.support.v4.app.NoSaveStateFrameLayout -> android.support.v4.app.w:
+    android.view.ViewGroup wrap(android.view.View) -> a
+    void dispatchSaveInstanceState(android.util.SparseArray) -> dispatchSaveInstanceState
+    void dispatchRestoreInstanceState(android.util.SparseArray) -> dispatchRestoreInstanceState
+android.support.v4.app.SuperNotCalledException -> android.support.v4.app.x:
+android.support.v4.content.Loader -> android.support.v4.a.a:
+    int mId -> a
+    android.support.v4.content.Loader$OnLoadCompleteListener mListener -> b
+    boolean mStarted -> c
+    boolean mAbandoned -> d
+    boolean mReset -> e
+    boolean mContentChanged -> f
+    void registerListener(int,android.support.v4.content.Loader$OnLoadCompleteListener) -> a
+    void unregisterListener(android.support.v4.content.Loader$OnLoadCompleteListener) -> a
+    void startLoading() -> a
+    void onStartLoading() -> b
+    void stopLoading() -> c
+    void onStopLoading() -> d
+    void reset() -> e
+    void onReset() -> f
+    java.lang.String dataToString(java.lang.Object) -> a
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+android.support.v4.content.Loader$OnLoadCompleteListener -> android.support.v4.a.b:
+android.support.v4.os.ParcelableCompat -> android.support.v4.b.a:
+    android.os.Parcelable$Creator newCreator(android.support.v4.os.ParcelableCompatCreatorCallbacks) -> a
+android.support.v4.os.ParcelableCompat$CompatCreator -> android.support.v4.b.b:
+    android.support.v4.os.ParcelableCompatCreatorCallbacks mCallbacks -> a
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    java.lang.Object[] newArray(int) -> newArray
+android.support.v4.os.ParcelableCompatCreatorCallbacks -> android.support.v4.b.c:
+    java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> a
+    java.lang.Object[] newArray(int) -> a
+android.support.v4.os.ParcelableCompatCreatorHoneycombMR2 -> android.support.v4.b.d:
+    android.support.v4.os.ParcelableCompatCreatorCallbacks mCallbacks -> a
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    java.lang.Object[] newArray(int) -> newArray
+android.support.v4.os.ParcelableCompatCreatorHoneycombMR2Stub -> android.support.v4.b.e:
+    android.os.Parcelable$Creator instantiate(android.support.v4.os.ParcelableCompatCreatorCallbacks) -> a
+android.support.v4.util.DebugUtils -> android.support.v4.c.a:
+    void buildShortClassTag(java.lang.Object,java.lang.StringBuilder) -> a
+android.support.v4.util.LogWriter -> android.support.v4.c.b:
+    java.lang.String mTag -> a
+    java.lang.StringBuilder mBuilder -> b
+    void close() -> close
+    void flush() -> flush
+    void write(char[],int,int) -> write
+    void flushBuilder() -> a
+android.support.v4.util.SparseArrayCompat -> android.support.v4.c.c:
+    java.lang.Object DELETED -> a
+    boolean mGarbage -> b
+    int[] mKeys -> c
+    java.lang.Object[] mValues -> d
+    int mSize -> e
+    java.lang.Object get(int) -> a
+    java.lang.Object get(int,java.lang.Object) -> a
+    void delete(int) -> b
+    void remove(int) -> c
+    void removeAt(int) -> d
+    void gc() -> c
+    void put(int,java.lang.Object) -> b
+    int size() -> a
+    int keyAt(int) -> e
+    java.lang.Object valueAt(int) -> f
+    void clear() -> b
+    int binarySearch(int[],int,int,int) -> a
+    int idealByteArraySize(int) -> g
+    int idealIntArraySize(int) -> h
+android.support.v4.view.KeyEventCompat -> android.support.v4.view.a:
+    android.support.v4.view.KeyEventCompat$KeyEventVersionImpl IMPL -> a
+    boolean hasModifiers(android.view.KeyEvent,int) -> a
+    boolean hasNoModifiers(android.view.KeyEvent) -> a
+android.support.v4.view.KeyEventCompat$BaseKeyEventVersionImpl -> android.support.v4.view.b:
+    int metaStateFilterDirectionalModifiers(int,int,int,int,int) -> a
+    int normalizeMetaState(int) -> a
+    boolean metaStateHasModifiers(int,int) -> a
+    boolean metaStateHasNoModifiers(int) -> b
+android.support.v4.view.KeyEventCompat$HoneycombKeyEventVersionImpl -> android.support.v4.view.c:
+    boolean metaStateHasModifiers(int,int) -> a
+    boolean metaStateHasNoModifiers(int) -> b
+android.support.v4.view.KeyEventCompat$KeyEventVersionImpl -> android.support.v4.view.d:
+    boolean metaStateHasModifiers(int,int) -> a
+    boolean metaStateHasNoModifiers(int) -> b
+android.support.v4.view.KeyEventCompatHoneycomb -> android.support.v4.view.e:
+    boolean metaStateHasModifiers(int,int) -> a
+    boolean metaStateHasNoModifiers(int) -> a
+android.support.v4.view.MotionEventCompat -> android.support.v4.view.f:
+    android.support.v4.view.MotionEventCompat$MotionEventVersionImpl IMPL -> a
+    int getActionIndex(android.view.MotionEvent) -> a
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompat$BaseMotionEventVersionImpl -> android.support.v4.view.g:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompat$EclairMotionEventVersionImpl -> android.support.v4.view.h:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompat$MotionEventVersionImpl -> android.support.v4.view.i:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompatEclair -> android.support.v4.view.j:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.PagerAdapter -> android.support.v4.view.k:
+    android.database.DataSetObservable mObservable -> a
+    int getCount() -> a
+    void startUpdate(android.view.ViewGroup) -> a
+    java.lang.Object instantiateItem(android.view.ViewGroup,int) -> a
+    void destroyItem(android.view.ViewGroup,int,java.lang.Object) -> a
+    void setPrimaryItem(android.view.ViewGroup,int,java.lang.Object) -> b
+    void finishUpdate(android.view.ViewGroup) -> b
+    void startUpdate(android.view.View) -> a
+    java.lang.Object instantiateItem(android.view.View,int) -> a
+    void destroyItem(android.view.View,int,java.lang.Object) -> a
+    void setPrimaryItem(android.view.View,int,java.lang.Object) -> b
+    void finishUpdate(android.view.View) -> b
+    boolean isViewFromObject(android.view.View,java.lang.Object) -> a
+    android.os.Parcelable saveState() -> b
+    void restoreState(android.os.Parcelable,java.lang.ClassLoader) -> a
+    int getItemPosition(java.lang.Object) -> a
+    void registerDataSetObserver(android.database.DataSetObserver) -> a
+    void unregisterDataSetObserver(android.database.DataSetObserver) -> b
+    float getPageWidth(int) -> a
+android.support.v4.view.VelocityTrackerCompat -> android.support.v4.view.l:
+    android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl IMPL -> a
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompat$BaseVelocityTrackerVersionImpl -> android.support.v4.view.m:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompat$HoneycombVelocityTrackerVersionImpl -> android.support.v4.view.n:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl -> android.support.v4.view.o:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompatHoneycomb -> android.support.v4.view.p:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.ViewCompat -> android.support.v4.view.q:
+    android.support.v4.view.ViewCompat$ViewCompatImpl IMPL -> a
+    boolean canScrollHorizontally(android.view.View,int) -> a
+    int getOverScrollMode(android.view.View) -> a
+    void postInvalidateOnAnimation(android.view.View) -> b
+android.support.v4.view.ViewCompat$BaseViewCompatImpl -> android.support.v4.view.r:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+    int getOverScrollMode(android.view.View) -> a
+    void postInvalidateOnAnimation(android.view.View) -> b
+    long getFrameTime() -> a
+android.support.v4.view.ViewCompat$GBViewCompatImpl -> android.support.v4.view.s:
+    int getOverScrollMode(android.view.View) -> a
+android.support.v4.view.ViewCompat$HCViewCompatImpl -> android.support.v4.view.t:
+    long getFrameTime() -> a
+android.support.v4.view.ViewCompat$ICSViewCompatImpl -> android.support.v4.view.u:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+android.support.v4.view.ViewCompat$JBViewCompatImpl -> android.support.v4.view.v:
+    void postInvalidateOnAnimation(android.view.View) -> b
+android.support.v4.view.ViewCompat$ViewCompatImpl -> android.support.v4.view.w:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+    int getOverScrollMode(android.view.View) -> a
+    void postInvalidateOnAnimation(android.view.View) -> b
+android.support.v4.view.ViewCompatGingerbread -> android.support.v4.view.x:
+    int getOverScrollMode(android.view.View) -> a
+android.support.v4.view.ViewCompatHC -> android.support.v4.view.y:
+    long getFrameTime() -> a
+android.support.v4.view.ViewCompatICS -> android.support.v4.view.z:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+android.support.v4.view.ViewCompatJB -> android.support.v4.view.aa:
+    void postInvalidateOnAnimation(android.view.View) -> a
+android.support.v4.view.ViewPager -> android.support.v4.view.ViewPager:
+    int[] LAYOUT_ATTRS -> a
+    java.util.Comparator COMPARATOR -> b
+    android.view.animation.Interpolator sInterpolator -> c
+    java.util.ArrayList mItems -> d
+    android.support.v4.view.ViewPager$ItemInfo mTempItem -> e
+    android.graphics.Rect mTempRect -> f
+    android.support.v4.view.PagerAdapter mAdapter -> g
+    int mCurItem -> h
+    int mRestoredCurItem -> i
+    android.os.Parcelable mRestoredAdapterState -> j
+    java.lang.ClassLoader mRestoredClassLoader -> k
+    android.widget.Scroller mScroller -> l
+    android.support.v4.view.ViewPager$PagerObserver mObserver -> m
+    int mPageMargin -> n
+    android.graphics.drawable.Drawable mMarginDrawable -> o
+    int mTopPageBounds -> p
+    int mBottomPageBounds -> q
+    float mFirstOffset -> r
+    float mLastOffset -> s
+    int mChildWidthMeasureSpec -> t
+    int mChildHeightMeasureSpec -> u
+    boolean mInLayout -> v
+    boolean mScrollingCacheEnabled -> w
+    boolean mPopulatePending -> x
+    int mOffscreenPageLimit -> y
+    boolean mIsBeingDragged -> z
+    boolean mIsUnableToDrag -> A
+    int mDefaultGutterSize -> B
+    int mGutterSize -> C
+    int mTouchSlop -> D
+    float mInitialMotionX -> E
+    float mLastMotionX -> F
+    float mLastMotionY -> G
+    int mActivePointerId -> H
+    android.view.VelocityTracker mVelocityTracker -> I
+    int mMinimumVelocity -> J
+    int mMaximumVelocity -> K
+    int mFlingDistance -> L
+    int mCloseEnough -> M
+    boolean mFakeDragging -> N
+    android.support.v4.widget.EdgeEffectCompat mLeftEdge -> O
+    android.support.v4.widget.EdgeEffectCompat mRightEdge -> P
+    boolean mFirstLayout -> Q
+    boolean mNeedCalculatePageOffsets -> R
+    boolean mCalledSuper -> S
+    int mDecorChildCount -> T
+    android.support.v4.view.ViewPager$OnPageChangeListener mOnPageChangeListener -> U
+    android.support.v4.view.ViewPager$OnPageChangeListener mInternalPageChangeListener -> V
+    android.support.v4.view.ViewPager$OnAdapterChangeListener mAdapterChangeListener -> W
+    int mScrollState -> Z
+    void setScrollState(int) -> setScrollState
+    void setAdapter(android.support.v4.view.PagerAdapter) -> setAdapter
+    void removeNonDecorViews() -> f
+    android.support.v4.view.PagerAdapter getAdapter() -> getAdapter
+    void setOnAdapterChangeListener(android.support.v4.view.ViewPager$OnAdapterChangeListener) -> setOnAdapterChangeListener
+    void setCurrentItem(int) -> setCurrentItem
+    void setCurrentItem(int,boolean) -> a
+    int getCurrentItem() -> getCurrentItem
+    void setCurrentItemInternal(int,boolean,boolean) -> a
+    void setCurrentItemInternal(int,boolean,boolean,int) -> a
+    void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener) -> setOnPageChangeListener
+    int getOffscreenPageLimit() -> getOffscreenPageLimit
+    void setOffscreenPageLimit(int) -> setOffscreenPageLimit
+    void setPageMargin(int) -> setPageMargin
+    int getPageMargin() -> getPageMargin
+    void setPageMarginDrawable(android.graphics.drawable.Drawable) -> setPageMarginDrawable
+    void setPageMarginDrawable(int) -> setPageMarginDrawable
+    boolean verifyDrawable(android.graphics.drawable.Drawable) -> verifyDrawable
+    void drawableStateChanged() -> drawableStateChanged
+    float distanceInfluenceForSnapDuration(float) -> a
+    void smoothScrollTo(int,int,int) -> a
+    android.support.v4.view.ViewPager$ItemInfo addNewItem(int,int) -> a
+    void dataSetChanged() -> a
+    void populate() -> b
+    void populate(int) -> a
+    void calculatePageOffsets(android.support.v4.view.ViewPager$ItemInfo,int,android.support.v4.view.ViewPager$ItemInfo) -> a
+    android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
+    void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
+    void addView(android.view.View,int,android.view.ViewGroup$LayoutParams) -> addView
+    android.support.v4.view.ViewPager$ItemInfo infoForChild(android.view.View) -> a
+    android.support.v4.view.ViewPager$ItemInfo infoForAnyChild(android.view.View) -> b
+    android.support.v4.view.ViewPager$ItemInfo infoForPosition(int) -> b
+    void onAttachedToWindow() -> onAttachedToWindow
+    void onMeasure(int,int) -> onMeasure
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    void recomputeScrollPosition(int,int,int,int) -> a
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    void computeScroll() -> computeScroll
+    boolean pageScrolled(int) -> d
+    void onPageScrolled(int,float,int) -> a
+    void completeScroll() -> g
+    boolean isGutterDrag(float,float) -> a
+    boolean onInterceptTouchEvent(android.view.MotionEvent) -> onInterceptTouchEvent
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    boolean performDrag(float) -> b
+    android.support.v4.view.ViewPager$ItemInfo infoForCurrentScrollPosition() -> h
+    int determineTargetPage(int,float,int,int) -> a
+    void draw(android.graphics.Canvas) -> draw
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void onSecondaryPointerUp(android.view.MotionEvent) -> a
+    void endDrag() -> i
+    void setScrollingCacheEnabled(boolean) -> setScrollingCacheEnabled
+    boolean canScroll(android.view.View,boolean,int,int,int) -> a
+    boolean dispatchKeyEvent(android.view.KeyEvent) -> dispatchKeyEvent
+    boolean executeKeyEvent(android.view.KeyEvent) -> a
+    boolean arrowScroll(int) -> c
+    android.graphics.Rect getChildRectInPagerCoordinates(android.graphics.Rect,android.view.View) -> a
+    boolean pageLeft() -> c
+    boolean pageRight() -> d
+    void addFocusables(java.util.ArrayList,int,int) -> addFocusables
+    void addTouchables(java.util.ArrayList) -> addTouchables
+    boolean onRequestFocusInDescendants(int,android.graphics.Rect) -> onRequestFocusInDescendants
+    boolean dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent) -> dispatchPopulateAccessibilityEvent
+    android.view.ViewGroup$LayoutParams generateDefaultLayoutParams() -> generateDefaultLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.view.ViewGroup$LayoutParams) -> generateLayoutParams
+    boolean checkLayoutParams(android.view.ViewGroup$LayoutParams) -> checkLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet) -> generateLayoutParams
+    int[] access$300() -> e
+android.support.v4.view.ViewPager$1 -> android.support.v4.view.ab:
+    int compare(android.support.v4.view.ViewPager$ItemInfo,android.support.v4.view.ViewPager$ItemInfo) -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+android.support.v4.view.ViewPager$2 -> android.support.v4.view.ac:
+    float getInterpolation(float) -> getInterpolation
+android.support.v4.view.ViewPager$Decor -> android.support.v4.view.ad:
+android.support.v4.view.ViewPager$ItemInfo -> android.support.v4.view.ae:
+    java.lang.Object object -> a
+    int position -> b
+    boolean scrolling -> c
+    float widthFactor -> d
+    float offset -> e
+android.support.v4.view.ViewPager$LayoutParams -> android.support.v4.view.af:
+    boolean isDecor -> a
+    int gravity -> b
+    float widthFactor -> c
+    boolean needsMeasure -> d
+android.support.v4.view.ViewPager$OnAdapterChangeListener -> android.support.v4.view.ag:
+    void onAdapterChanged(android.support.v4.view.PagerAdapter,android.support.v4.view.PagerAdapter) -> a
+android.support.v4.view.ViewPager$OnPageChangeListener -> android.support.v4.view.ah:
+    void onPageScrolled(int,float,int) -> a
+    void onPageSelected(int) -> a
+    void onPageScrollStateChanged(int) -> b
+android.support.v4.view.ViewPager$PagerObserver -> android.support.v4.view.ai:
+    android.support.v4.view.ViewPager this$0 -> a
+    void onChanged() -> onChanged
+    void onInvalidated() -> onInvalidated
+android.support.v4.view.ViewPager$SavedState -> android.support.v4.view.ViewPager$SavedState:
+    int position -> a
+    android.os.Parcelable adapterState -> b
+    java.lang.ClassLoader loader -> c
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+    java.lang.String toString() -> toString
+android.support.v4.view.ViewPager$SavedState$1 -> android.support.v4.view.aj:
+    android.support.v4.view.ViewPager$SavedState createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> b
+    android.support.v4.view.ViewPager$SavedState[] newArray(int) -> b
+    java.lang.Object[] newArray(int) -> a
+    java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> a
+android.support.v4.widget.EdgeEffectCompat -> android.support.v4.d.a:
+    java.lang.Object mEdgeEffect -> a
+    android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl IMPL -> b
+    void setSize(int,int) -> a
+    boolean isFinished() -> a
+    void finish() -> b
+    boolean onPull(float) -> a
+    boolean onRelease() -> c
+    boolean draw(android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompat$BaseEdgeEffectImpl -> android.support.v4.d.b:
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectIcsImpl -> android.support.v4.d.c:
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl -> android.support.v4.d.d:
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompatIcs -> android.support.v4.d.e:
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+com.andrewkeeton.divide.and.conquer.card.shuffler.AutoResizeTextView -> com.andrewkeeton.divide.and.conquer.card.shuffler.AutoResizeTextView:
+    java.util.HashMap mTextSizeCache -> a
+    com.andrewkeeton.divide.and.conquer.card.shuffler.AutoResizeTextView$OnTextResizeListener mTextResizeListener -> b
+    boolean mNeedsResize -> c
+    float mTextSize -> d
+    float mMaxTextSize -> e
+    float mMinTextSize -> f
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    void setOnResizeListener(com.andrewkeeton.divide.and.conquer.card.shuffler.AutoResizeTextView$OnTextResizeListener) -> setOnResizeListener
+    void setTextSize(float) -> setTextSize
+    void setTextSize(int,float) -> setTextSize
+    void setMaxTextSize(float) -> setMaxTextSize
+    float getMaxTextSize() -> getMaxTextSize
+    void setMinTextSize(float) -> setMinTextSize
+    float getMinTextSize() -> getMinTextSize
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    void resizeText(java.lang.CharSequence) -> a
+    void resizeText(java.lang.CharSequence,int,int) -> a
+    void getTextBounds(java.lang.CharSequence,android.text.TextPaint,float,android.graphics.Rect) -> a
+com.andrewkeeton.divide.and.conquer.card.shuffler.AutoResizeTextView$OnTextResizeListener -> com.andrewkeeton.divide.and.conquer.card.shuffler.a:
+    void onTextResize(android.widget.TextView,float,float) -> a
+com.andrewkeeton.divide.and.conquer.card.shuffler.Card -> com.andrewkeeton.divide.and.conquer.card.shuffler.b:
+    java.lang.Integer mKey -> a
+    java.lang.Object mValue -> b
+    int compareTo(com.andrewkeeton.divide.and.conquer.card.shuffler.Card) -> a
+    java.lang.String toString() -> toString
+    int compareTo(java.lang.Object) -> compareTo
+com.andrewkeeton.divide.and.conquer.card.shuffler.EstimateTime -> com.andrewkeeton.divide.and.conquer.card.shuffler.c:
+    int[][] moveTypeCounts -> a
+    int estimatedTimeMillis(int,long) -> a
+    int estimatedTimeMinutes(int,long) -> b
+com.andrewkeeton.divide.and.conquer.card.shuffler.MainActivity -> com.andrewkeeton.divide.and.conquer.card.shuffler.MainActivity:
+    android.os.Handler mHandler -> m
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.BillingService mBillingService -> n
+    com.andrewkeeton.divide.and.conquer.card.shuffler.MainActivity$DCPurchaseObserver mDCPurchaseObserver -> o
+    boolean mInAppBillingSupported -> p
+    android.app.Activity mActivity -> q
+    void donate() -> f
+    int numberFromString(java.lang.String,int) -> a
+    int numberFromEditText(android.widget.EditText,int) -> a
+    void onDoneWithSetup(int,int,boolean) -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void hideSoftKeyboard(android.app.Activity) -> a
+    void onStart() -> onStart
+    void onResume() -> onResume
+    void onPause() -> onPause
+    void onStop() -> onStop
+    void onDestroy() -> onDestroy
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onMenuOpened(int,android.view.Menu) -> onMenuOpened
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    void access$0(com.andrewkeeton.divide.and.conquer.card.shuffler.MainActivity,boolean) -> a
+    android.app.Activity access$1(com.andrewkeeton.divide.and.conquer.card.shuffler.MainActivity) -> a
+com.andrewkeeton.divide.and.conquer.card.shuffler.MainActivity$DCPurchaseObserver -> com.andrewkeeton.divide.and.conquer.card.shuffler.d:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.MainActivity this$0 -> a
+    void onBillingSupported(boolean,java.lang.String) -> a
+    void onPurchaseStateChange(com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$PurchaseState,java.lang.String,int,long,java.lang.String) -> a
+    void onRequestPurchaseResponse(com.andrewkeeton.divide.and.conquer.card.shuffler.billing.BillingService$RequestPurchase,com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$ResponseCode) -> a
+com.andrewkeeton.divide.and.conquer.card.shuffler.Move -> com.andrewkeeton.divide.and.conquer.card.shuffler.Move:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.Move$MoveType mType -> a
+    int mValue -> b
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    int[] $SWITCH_TABLE$com$andrewkeeton$divide$and$conquer$card$shuffler$Move$MoveType -> c
+    boolean equals(java.lang.Object) -> equals
+    java.lang.String toString() -> toString
+    com.andrewkeeton.divide.and.conquer.card.shuffler.Move fromString(java.lang.String) -> a
+    java.util.ArrayList arrayListFromString(java.lang.String) -> b
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+    int[] $SWITCH_TABLE$com$andrewkeeton$divide$and$conquer$card$shuffler$Move$MoveType() -> a
+com.andrewkeeton.divide.and.conquer.card.shuffler.Move$1 -> com.andrewkeeton.divide.and.conquer.card.shuffler.e:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.Move createFromParcel(android.os.Parcel) -> a
+    com.andrewkeeton.divide.and.conquer.card.shuffler.Move[] newArray(int) -> a
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    java.lang.Object[] newArray(int) -> newArray
+com.andrewkeeton.divide.and.conquer.card.shuffler.Move$MoveType -> com.andrewkeeton.divide.and.conquer.card.shuffler.f:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.Move$MoveType DEAL -> a
+    com.andrewkeeton.divide.and.conquer.card.shuffler.Move$MoveType PICKUP -> b
+    com.andrewkeeton.divide.and.conquer.card.shuffler.Move$MoveType BOTTOM -> c
+    com.andrewkeeton.divide.and.conquer.card.shuffler.Move$MoveType NONE -> d
+    com.andrewkeeton.divide.and.conquer.card.shuffler.Move$MoveType[] ENUM$VALUES -> e
+    com.andrewkeeton.divide.and.conquer.card.shuffler.Move$MoveType[] values() -> values
+    com.andrewkeeton.divide.and.conquer.card.shuffler.Move$MoveType valueOf(java.lang.String) -> valueOf
+com.andrewkeeton.divide.and.conquer.card.shuffler.PileOfCards -> com.andrewkeeton.divide.and.conquer.card.shuffler.g:
+    java.security.SecureRandom mRandomSeeder -> d
+    java.security.SecureRandom mRandomShuffler -> e
+    java.util.ArrayList mCards -> a
+    int mMinKey -> b
+    int mMaxKey -> c
+    java.util.ArrayList sortIntoPiles(int,java.util.ArrayList) -> a
+    java.util.ArrayList sortDeckCompletely(int) -> a
+    void shuffle() -> a
+    void shuffle(java.util.Random,int,int) -> a
+    int size() -> b
+    java.lang.String toString() -> toString
+    double logOfBase(double,double) -> a
+com.andrewkeeton.divide.and.conquer.card.shuffler.SettingsActivity -> com.andrewkeeton.divide.and.conquer.card.shuffler.SettingsActivity:
+    boolean mPrefSoundEffects -> a
+    boolean mPrefTutorial -> b
+    android.content.SharedPreferences mSharedPreferences -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String) -> onSharedPreferenceChanged
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment -> com.andrewkeeton.divide.and.conquer.card.shuffler.h:
+    android.content.res.Resources mRes -> O
+    android.app.Activity mActivity -> P
+    android.content.SharedPreferences mSharedPrefs -> Q
+    android.widget.EditText mEditTextDeckSize -> R
+    android.widget.TextView mTextViewSpeed -> S
+    android.widget.RadioButton mRadioButtonPresetSpeed -> T
+    android.widget.Spinner mSpinnerPresetSpeed -> U
+    android.widget.RadioButton mRadioButtonCustomSpeed -> V
+    android.widget.EditText mEditTextCustomSpeed -> W
+    android.widget.TextView mTextViewEstimatedTime -> X
+    android.widget.Button mButtonResume -> Y
+    android.widget.Button mButtonNew -> Z
+    android.os.Handler mHandlerSpeedPreview -> aa
+    java.util.List mRadioButtonsSpeed -> ab
+    int mSpeedCardsPerMinute -> ac
+    int mDelayPeriodMillis -> ad
+    int mDeckSize -> ae
+    float mTextViewSpeedSaturation -> af
+    int mEstimatedTime -> ag
+    java.lang.Runnable mTaskUpdateSpeedPreview -> ah
+    android.text.TextWatcher mTextWatcherEditTextDeckSize -> ai
+    android.widget.CompoundButton$OnCheckedChangeListener mOnCheckedChangePresetSpeed -> aj
+    android.widget.AdapterView$OnItemSelectedListener mOnItemSelectedSpinnerPresetSpeed -> ak
+    android.widget.CompoundButton$OnCheckedChangeListener mOnCheckedChangeCustomSpeed -> al
+    android.text.TextWatcher mTextWatcherEditTextCustomSpeed -> am
+    android.view.View$OnClickListener mOnClickButtonResume -> an
+    android.view.View$OnClickListener mOnClickButtonNew -> ao
+    android.widget.TextView$OnEditorActionListener mOnEditorActionEditText -> ap
+    com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment$OnDoneWithSetupListener mOnDoneWithSetupListener -> N
+    int[] $SWITCH_TABLE$com$andrewkeeton$divide$and$conquer$card$shuffler$SetupFragment$Speeds -> aq
+    double periodMillisecondsFromSpeedPerMinute(int) -> b
+    void updateDeckSizeFromEditText(android.widget.EditText) -> a
+    void updatePresetSpeedFromSpinner(android.widget.Spinner,int) -> a
+    void processRadioButtonClick(java.util.List,android.widget.CompoundButton) -> a
+    void setDeckSize(int,boolean) -> a
+    void setSpeed(int,boolean) -> b
+    void setEstimatedTime(int,boolean) -> c
+    void onAttach(android.app.Activity) -> a
+    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
+    void onStart() -> f
+    void onPause() -> h
+    void onStop() -> i
+    void onSaveInstanceState(android.os.Bundle) -> e
+    float access$0(com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment) -> a
+    int access$1(com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment) -> b
+    void access$2(com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment,float) -> a
+    android.content.res.Resources access$3(com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment) -> c
+    android.widget.TextView access$4(com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment) -> d
+    android.os.Handler access$5(com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment) -> e
+    void access$6(com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment,int,boolean) -> a
+    android.widget.EditText access$7(com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment) -> f
+    void access$8(com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment,android.widget.EditText) -> a
+    java.util.List access$9(com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment) -> g
+    void access$10(com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment,java.util.List,android.widget.CompoundButton) -> a
+    android.widget.Spinner access$11(com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment) -> h
+    void access$12(com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment,android.widget.Spinner,int) -> a
+    android.widget.EditText access$13(com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment) -> i
+    android.widget.RadioButton access$14(com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment) -> j
+    void access$15(com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment,int,boolean) -> b
+    android.app.Activity access$16(com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment) -> k
+    android.content.SharedPreferences access$17(com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment) -> l
+    int access$18(com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment) -> m
+    int access$19(com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment) -> n
+    int[] $SWITCH_TABLE$com$andrewkeeton$divide$and$conquer$card$shuffler$SetupFragment$Speeds() -> s
+com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment$1 -> com.andrewkeeton.divide.and.conquer.card.shuffler.i:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment this$0 -> a
+    void run() -> run
+com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment$2 -> com.andrewkeeton.divide.and.conquer.card.shuffler.j:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment this$0 -> a
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment$3 -> com.andrewkeeton.divide.and.conquer.card.shuffler.k:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment this$0 -> a
+    void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment$4 -> com.andrewkeeton.divide.and.conquer.card.shuffler.l:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment this$0 -> a
+    void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
+    void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
+com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment$5 -> com.andrewkeeton.divide.and.conquer.card.shuffler.m:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment this$0 -> a
+    void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment$6 -> com.andrewkeeton.divide.and.conquer.card.shuffler.n:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment this$0 -> a
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment$7 -> com.andrewkeeton.divide.and.conquer.card.shuffler.o:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment$8 -> com.andrewkeeton.divide.and.conquer.card.shuffler.p:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment$9 -> com.andrewkeeton.divide.and.conquer.card.shuffler.q:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment this$0 -> a
+    boolean onEditorAction(android.widget.TextView,int,android.view.KeyEvent) -> onEditorAction
+com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment$OnDoneWithSetupListener -> com.andrewkeeton.divide.and.conquer.card.shuffler.r:
+    void onDoneWithSetup(int,int,boolean) -> a
+com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment$Speeds -> com.andrewkeeton.divide.and.conquer.card.shuffler.s:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment$Speeds FAST -> a
+    com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment$Speeds MEDIUM -> b
+    com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment$Speeds SLOW -> c
+    com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment$Speeds[] ENUM$VALUES -> d
+    com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment$Speeds[] values() -> values
+    com.andrewkeeton.divide.and.conquer.card.shuffler.SetupFragment$Speeds valueOf(java.lang.String) -> valueOf
+com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment -> com.andrewkeeton.divide.and.conquer.card.shuffler.t:
+    android.content.res.Resources mRes -> N
+    android.app.Activity mActivity -> O
+    android.content.SharedPreferences mSharedPrefs -> P
+    android.view.View mViewRoot -> W
+    android.widget.ImageView mImageViewArrowsArea -> X
+    android.widget.Button mButtonShufflerControl -> Y
+    int[] mImageViewPileIds -> Z
+    int[] mImageViewPickupArrowIds -> aa
+    android.widget.ImageView mImageViewDeck -> ab
+    android.view.ViewTreeObserver mImageViewDeckViewTreeObserver -> ac
+    android.widget.ImageView[] mImageViewPiles -> ad
+    android.widget.ImageView[] mImageViewPickupArrows -> ae
+    android.widget.ImageView mImageViewBottomArrowAbove -> af
+    android.widget.ImageView mImageViewBottomArrowBelow -> ag
+    java.util.ArrayList mImageViews -> ah
+    android.graphics.ColorMatrixColorFilter mColorFilterDesaturated -> Q
+    int[] mTextViewPileSizeIds -> ai
+    android.widget.TextView mTextViewDeckSize -> aj
+    android.widget.TextView[] mTextViewPileSizes -> ak
+    android.widget.TextView mTextViewBottomAmount -> al
+    com.andrewkeeton.divide.and.conquer.card.shuffler.AutoResizeTextView mTextViewState -> am
+    android.app.ProgressDialog mProgressDialogShuffling -> an
+    android.os.Handler mHandler -> ao
+    android.media.SoundPool mSoundPoolDealing -> ap
+    java.util.ArrayList mSoundDealingIds -> aq
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$State mState -> R
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$State mStatePrev -> S
+    int mDeckStartingSize -> ar
+    int mDeckSize -> as
+    int mDelayPeriodMilliseconds -> at
+    java.util.ArrayList mMoves -> au
+    int mCountdown -> av
+    int mPickupArrowNum -> aw
+    int mNumCardsToBottom -> ax
+    int mTextViewStateAlpha -> ay
+    boolean mFirstTimePickingUp -> az
+    boolean mFirstTimePickingUpNoDeck -> aA
+    boolean mFirstTimeBottoming -> aB
+    boolean mIsNew -> aC
+    boolean mDoneShuffling -> aD
+    java.lang.Thread mThreadShuffle -> T
+    java.lang.Thread mThreadLoadSound -> U
+    java.lang.Runnable mTaskMain -> aE
+    java.lang.Runnable mTaskTextViewStateFade -> aF
+    android.view.View$OnClickListener mOnClickButtonShufflerControl -> aG
+    android.app.Dialog mDialogInstructions -> aH
+    android.view.View$OnClickListener mOnClickButtonDialogInstructionsOK -> aI
+    boolean mNeedsResizing -> V
+    void resumeShuffler(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$State,int) -> a
+    void pauseShuffler() -> s
+    void doneShuffling() -> t
+    void changeState(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$State) -> a
+    void displayState(int,boolean) -> a
+    android.app.Dialog createDialogInstructions(int,int,int,android.content.DialogInterface$OnDismissListener) -> a
+    android.app.Dialog createDialogInstructions(java.lang.String,java.lang.String,java.lang.String,android.content.DialogInterface$OnDismissListener) -> a
+    void onAttach(android.app.Activity) -> a
+    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
+    void onStart() -> f
+    void onResume() -> g
+    void onPause() -> h
+    void onStop() -> i
+    void onDestroy() -> k
+    void onSaveInstanceState(android.os.Bundle) -> e
+    int access$0(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> a
+    void access$1(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment,java.util.ArrayList) -> a
+    android.app.ProgressDialog access$2(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> b
+    void access$3(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment,android.app.ProgressDialog) -> a
+    void access$4(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment,boolean) -> a
+    android.os.Handler access$5(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> c
+    java.lang.Runnable access$6(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> d
+    void access$7(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment,android.media.SoundPool) -> a
+    java.util.ArrayList access$8(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> e
+    android.media.SoundPool access$9(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> f
+    android.widget.ImageView access$10(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> g
+    android.app.Dialog access$11(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment,int,int,int,android.content.DialogInterface$OnDismissListener) -> a
+    int access$12(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> h
+    void access$13(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment,int,boolean) -> a
+    void access$14(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment,int) -> a
+    java.util.ArrayList access$15(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> i
+    int access$16(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> j
+    int access$17(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> k
+    void access$18(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment,int) -> b
+    android.widget.TextView access$19(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> l
+    android.widget.ImageView access$20(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> m
+    android.widget.ImageView[] access$21(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> n
+    android.widget.TextView[] access$22(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> o
+    android.widget.Button access$23(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> p
+    boolean access$24(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> q
+    boolean access$25(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> r
+    void access$26(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment,boolean) -> b
+    void access$27(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment,boolean) -> c
+    void access$28(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment,int) -> c
+    boolean access$29(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> s
+    void access$30(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment,boolean) -> d
+    int access$31(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> t
+    android.app.Dialog access$32(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment,java.lang.String,java.lang.String,java.lang.String,android.content.DialogInterface$OnDismissListener) -> a
+    int access$33(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> u
+    android.widget.ImageView[] access$34(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> v
+    void access$35(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment,int) -> d
+    android.widget.ImageView access$36(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> w
+    android.widget.ImageView access$37(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> x
+    android.widget.TextView access$38(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> y
+    void access$39(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> z
+    int access$40(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> A
+    void access$41(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment,int) -> e
+    com.andrewkeeton.divide.and.conquer.card.shuffler.AutoResizeTextView access$42(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> B
+    android.app.Dialog access$43(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> C
+    android.view.View access$44(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment) -> D
+com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$1 -> com.andrewkeeton.divide.and.conquer.card.shuffler.u:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment this$0 -> a
+    void run() -> run
+com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$2 -> com.andrewkeeton.divide.and.conquer.card.shuffler.v:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment this$0 -> a
+    void run() -> run
+com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$3 -> com.andrewkeeton.divide.and.conquer.card.shuffler.w:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment this$0 -> a
+    int[] $SWITCH_TABLE$com$andrewkeeton$divide$and$conquer$card$shuffler$Move$MoveType -> b
+    int[] $SWITCH_TABLE$com$andrewkeeton$divide$and$conquer$card$shuffler$ShufflerFragment$State -> c
+    void run() -> run
+    int[] $SWITCH_TABLE$com$andrewkeeton$divide$and$conquer$card$shuffler$Move$MoveType() -> a
+    int[] $SWITCH_TABLE$com$andrewkeeton$divide$and$conquer$card$shuffler$ShufflerFragment$State() -> b
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment access$2(com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$3) -> a
+com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$3$1 -> com.andrewkeeton.divide.and.conquer.card.shuffler.x:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$3 this$1 -> a
+    void onDismiss(android.content.DialogInterface) -> onDismiss
+com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$3$2 -> com.andrewkeeton.divide.and.conquer.card.shuffler.y:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$3 this$1 -> a
+    void onDismiss(android.content.DialogInterface) -> onDismiss
+com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$4 -> com.andrewkeeton.divide.and.conquer.card.shuffler.z:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment this$0 -> a
+    void run() -> run
+com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$5 -> com.andrewkeeton.divide.and.conquer.card.shuffler.aa:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment this$0 -> a
+    int[] $SWITCH_TABLE$com$andrewkeeton$divide$and$conquer$card$shuffler$ShufflerFragment$State -> b
+    void onClick(android.view.View) -> onClick
+    int[] $SWITCH_TABLE$com$andrewkeeton$divide$and$conquer$card$shuffler$ShufflerFragment$State() -> a
+com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$6 -> com.andrewkeeton.divide.and.conquer.card.shuffler.ab:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$7 -> com.andrewkeeton.divide.and.conquer.card.shuffler.ac:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment this$0 -> a
+    boolean onPreDraw() -> onPreDraw
+com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$State -> com.andrewkeeton.divide.and.conquer.card.shuffler.ad:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$State READY -> a
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$State COUNTING_DOWN -> b
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$State DEALING -> c
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$State PICKING_UP -> d
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$State BOTTOMING -> e
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$State PAUSED -> f
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$State DONE -> g
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$State INVALID -> h
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$State[] ENUM$VALUES -> i
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$State[] values() -> values
+    com.andrewkeeton.divide.and.conquer.card.shuffler.ShufflerFragment$State valueOf(java.lang.String) -> valueOf
+com.andrewkeeton.divide.and.conquer.card.shuffler.billing.BillingReceiver -> com.andrewkeeton.divide.and.conquer.card.shuffler.billing.BillingReceiver:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    void purchaseStateChanged(android.content.Context,java.lang.String,java.lang.String) -> a
+    void notify(android.content.Context,java.lang.String) -> a
+    void checkResponseCode(android.content.Context,long,int) -> a
+com.andrewkeeton.divide.and.conquer.card.shuffler.billing.BillingService -> com.andrewkeeton.divide.and.conquer.card.shuffler.billing.BillingService:
+    com.android.vending.billing.IMarketBillingService mService -> a
+    java.util.LinkedList mPendingRequests -> b
+    java.util.HashMap mSentRequests -> c
+    void setContext(android.content.Context) -> a
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onStart(android.content.Intent,int) -> onStart
+    void handleCommand(android.content.Intent,int) -> a
+    boolean bindToMarketBillingService() -> e
+    boolean checkBillingSupported(java.lang.String) -> a
+    boolean requestPurchase(java.lang.String,java.lang.String,java.lang.String) -> a
+    boolean confirmNotifications(int,java.lang.String[]) -> a
+    boolean getPurchaseInformation(int,java.lang.String[]) -> b
+    void purchaseStateChanged(int,java.lang.String,java.lang.String) -> a
+    void checkResponseCode(long,com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$ResponseCode) -> a
+    void runPendingRequests() -> f
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+    void unbind() -> a
+    boolean access$0(com.andrewkeeton.divide.and.conquer.card.shuffler.billing.BillingService) -> a
+    java.util.LinkedList access$1() -> b
+    com.android.vending.billing.IMarketBillingService access$2() -> c
+    java.util.HashMap access$3() -> d
+    void access$4(com.android.vending.billing.IMarketBillingService) -> a
+com.andrewkeeton.divide.and.conquer.card.shuffler.billing.BillingService$BillingRequest -> com.andrewkeeton.divide.and.conquer.card.shuffler.billing.a:
+    int mStartId -> c
+    long mRequestId -> a
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.BillingService this$0 -> b
+    int getStartId() -> a
+    boolean runRequest() -> b
+    boolean runIfConnected() -> c
+    void onRemoteException(android.os.RemoteException) -> a
+    long run() -> d
+    void responseCodeReceived(com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$ResponseCode) -> a
+    android.os.Bundle makeRequestBundle(java.lang.String) -> a
+    void logResponseCode(java.lang.String,android.os.Bundle) -> a
+com.andrewkeeton.divide.and.conquer.card.shuffler.billing.BillingService$CheckBillingSupported -> com.andrewkeeton.divide.and.conquer.card.shuffler.billing.b:
+    java.lang.String mProductType -> c
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.BillingService this$0 -> d
+    long run() -> d
+com.andrewkeeton.divide.and.conquer.card.shuffler.billing.BillingService$ConfirmNotifications -> com.andrewkeeton.divide.and.conquer.card.shuffler.billing.c:
+    java.lang.String[] mNotifyIds -> c
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.BillingService this$0 -> d
+    long run() -> d
+com.andrewkeeton.divide.and.conquer.card.shuffler.billing.BillingService$GetPurchaseInformation -> com.andrewkeeton.divide.and.conquer.card.shuffler.billing.d:
+    long mNonce -> c
+    java.lang.String[] mNotifyIds -> d
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.BillingService this$0 -> e
+    long run() -> d
+    void onRemoteException(android.os.RemoteException) -> a
+com.andrewkeeton.divide.and.conquer.card.shuffler.billing.BillingService$RequestPurchase -> com.andrewkeeton.divide.and.conquer.card.shuffler.billing.e:
+    java.lang.String mProductId -> c
+    java.lang.String mDeveloperPayload -> d
+    java.lang.String mProductType -> e
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.BillingService this$0 -> f
+    long run() -> d
+    void responseCodeReceived(com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$ResponseCode) -> a
+com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts -> com.andrewkeeton.divide.and.conquer.card.shuffler.billing.f:
+    long BILLING_RESPONSE_INVALID_REQUEST_ID -> a
+com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$PurchaseState -> com.andrewkeeton.divide.and.conquer.card.shuffler.billing.g:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$PurchaseState PURCHASED -> a
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$PurchaseState CANCELED -> b
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$PurchaseState REFUNDED -> c
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$PurchaseState[] ENUM$VALUES -> d
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$PurchaseState valueOf(int) -> a
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$PurchaseState[] values() -> values
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$PurchaseState valueOf(java.lang.String) -> valueOf
+com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$ResponseCode -> com.andrewkeeton.divide.and.conquer.card.shuffler.billing.h:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$ResponseCode RESULT_OK -> a
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$ResponseCode RESULT_USER_CANCELED -> b
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$ResponseCode RESULT_SERVICE_UNAVAILABLE -> c
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$ResponseCode RESULT_BILLING_UNAVAILABLE -> d
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$ResponseCode RESULT_ITEM_UNAVAILABLE -> e
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$ResponseCode RESULT_DEVELOPER_ERROR -> f
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$ResponseCode RESULT_ERROR -> g
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$ResponseCode[] ENUM$VALUES -> h
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$ResponseCode valueOf(int) -> a
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$ResponseCode[] values() -> values
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$ResponseCode valueOf(java.lang.String) -> valueOf
+com.andrewkeeton.divide.and.conquer.card.shuffler.billing.PurchaseDatabase -> com.andrewkeeton.divide.and.conquer.card.shuffler.billing.i:
+    java.lang.String[] HISTORY_COLUMNS -> a
+    java.lang.String[] PURCHASED_COLUMNS -> b
+    android.database.sqlite.SQLiteDatabase mDb -> c
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.PurchaseDatabase$DatabaseHelper mDatabaseHelper -> d
+    void close() -> a
+    void insertOrder(java.lang.String,java.lang.String,com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$PurchaseState,long,java.lang.String) -> b
+    void updatePurchasedItem(java.lang.String,int) -> a
+    int updatePurchase(java.lang.String,java.lang.String,com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$PurchaseState,long,java.lang.String) -> a
+com.andrewkeeton.divide.and.conquer.card.shuffler.billing.PurchaseDatabase$DatabaseHelper -> com.andrewkeeton.divide.and.conquer.card.shuffler.billing.j:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.PurchaseDatabase this$0 -> a
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+    void createPurchaseTable(android.database.sqlite.SQLiteDatabase) -> a
+com.andrewkeeton.divide.and.conquer.card.shuffler.billing.PurchaseObserver -> com.andrewkeeton.divide.and.conquer.card.shuffler.billing.k:
+    android.app.Activity mActivity -> a
+    android.os.Handler mHandler -> b
+    java.lang.reflect.Method mStartIntentSender -> c
+    java.lang.Object[] mStartIntentSenderArgs -> d
+    java.lang.Class[] START_INTENT_SENDER_SIG -> e
+    void onBillingSupported(boolean,java.lang.String) -> a
+    void onPurchaseStateChange(com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$PurchaseState,java.lang.String,int,long,java.lang.String) -> a
+    void onRequestPurchaseResponse(com.andrewkeeton.divide.and.conquer.card.shuffler.billing.BillingService$RequestPurchase,com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$ResponseCode) -> a
+    void initCompatibilityLayer() -> a
+    void startBuyPageActivity(android.app.PendingIntent,android.content.Intent) -> a
+    void postPurchaseStateChange(com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$PurchaseState,java.lang.String,int,long,java.lang.String) -> b
+com.andrewkeeton.divide.and.conquer.card.shuffler.billing.PurchaseObserver$1 -> com.andrewkeeton.divide.and.conquer.card.shuffler.billing.l:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.PurchaseObserver this$0 -> a
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$PurchaseState val$purchaseState -> b
+    java.lang.String val$itemId -> c
+    int val$quantity -> d
+    long val$purchaseTime -> e
+    java.lang.String val$developerPayload -> f
+    void run() -> run
+com.andrewkeeton.divide.and.conquer.card.shuffler.billing.ResponseHandler -> com.andrewkeeton.divide.and.conquer.card.shuffler.billing.m:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.PurchaseObserver sPurchaseObserver -> a
+    void register(com.andrewkeeton.divide.and.conquer.card.shuffler.billing.PurchaseObserver) -> a
+    void unregister(com.andrewkeeton.divide.and.conquer.card.shuffler.billing.PurchaseObserver) -> b
+    void checkBillingSupportedResponse(boolean,java.lang.String) -> a
+    void buyPageIntentResponse(android.app.PendingIntent,android.content.Intent) -> a
+    void purchaseResponse(android.content.Context,com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$PurchaseState,java.lang.String,java.lang.String,long,java.lang.String) -> a
+    void responseCodeReceived(android.content.Context,com.andrewkeeton.divide.and.conquer.card.shuffler.billing.BillingService$RequestPurchase,com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$ResponseCode) -> a
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.PurchaseObserver access$0() -> a
+com.andrewkeeton.divide.and.conquer.card.shuffler.billing.ResponseHandler$1 -> com.andrewkeeton.divide.and.conquer.card.shuffler.billing.n:
+    android.content.Context val$context -> a
+    java.lang.String val$orderId -> b
+    java.lang.String val$productId -> c
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$PurchaseState val$purchaseState -> d
+    long val$purchaseTime -> e
+    java.lang.String val$developerPayload -> f
+    void run() -> run
+com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Security -> com.andrewkeeton.divide.and.conquer.card.shuffler.billing.o:
+    java.security.SecureRandom RANDOM -> a
+    java.util.HashSet sKnownNonces -> b
+    long generateNonce() -> a
+    void removeNonce(long) -> a
+    boolean isNonceKnown(long) -> b
+    java.util.ArrayList verifyPurchase(java.lang.String,java.lang.String) -> a
+    java.security.PublicKey generatePublicKey(java.lang.String) -> a
+    boolean verify(java.security.PublicKey,java.lang.String,java.lang.String) -> a
+com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Security$VerifiedPurchase -> com.andrewkeeton.divide.and.conquer.card.shuffler.billing.p:
+    com.andrewkeeton.divide.and.conquer.card.shuffler.billing.Consts$PurchaseState purchaseState -> a
+    java.lang.String notificationId -> b
+    java.lang.String productId -> c
+    java.lang.String orderId -> d
+    long purchaseTime -> e
+    java.lang.String developerPayload -> f
+com.andrewkeeton.divide.and.conquer.card.shuffler.billing.util.Base64 -> com.andrewkeeton.divide.and.conquer.card.shuffler.billing.a.a:
+    byte[] ALPHABET -> b
+    byte[] WEBSAFE_ALPHABET -> c
+    byte[] DECODABET -> d
+    byte[] WEBSAFE_DECODABET -> e
+    boolean $assertionsDisabled -> a
+    int decode4to3(byte[],int,byte[],int,byte[]) -> a
+    byte[] decode(java.lang.String) -> a
+    byte[] decode(byte[],int,int) -> a
+    byte[] decode(byte[],int,int,byte[]) -> a
+com.andrewkeeton.divide.and.conquer.card.shuffler.billing.util.Base64DecoderException -> com.andrewkeeton.divide.and.conquer.card.shuffler.billing.a.b:
+com.android.vending.billing.IMarketBillingService -> com.a.a.a.a:
+    android.os.Bundle sendBillingRequest(android.os.Bundle) -> a
+com.android.vending.billing.IMarketBillingService$Stub -> com.a.a.a.b:
+    com.android.vending.billing.IMarketBillingService asInterface(android.os.IBinder) -> a
+    boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+com.android.vending.billing.IMarketBillingService$Stub$Proxy -> com.a.a.a.c:
+    android.os.IBinder mRemote -> a
+    android.os.IBinder asBinder() -> asBinder
+    android.os.Bundle sendBillingRequest(android.os.Bundle) -> a
+com.bugsense.trace.ActivityAsyncTask -> com.b.a.a:
+    java.lang.Object mWrapped -> a
+    boolean mPostProcessingDone -> b
+    java.lang.Object mResult -> c
+    void connectTo(java.lang.Object) -> a
+    boolean postProcessingDone() -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    void processPostExecute(java.lang.Object) -> b
+com.bugsense.trace.BugSense -> com.b.a.b:
+    com.bugsense.trace.ActivityAsyncTask sTask -> b
+    android.net.wifi.WifiManager$WifiLock wifiLock -> a
+    java.lang.String createJSON(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String[],java.util.Date,java.lang.String,java.util.Map) -> a
+    java.lang.String readLogs() -> a
+    java.lang.String MD5(java.lang.String) -> a
+    java.lang.String getClass(java.lang.String) -> b
+    void wiFiLockOn(android.content.Context) -> a
+    void wiFiLockOff() -> b
+    void submitError(android.content.Context,int,java.util.Date,java.lang.String) -> a
+    void submitError(android.content.Context,int,java.util.Date,java.lang.String,java.lang.String,java.util.Map) -> a
+    void sendError(int,java.util.Date,java.lang.String,java.lang.String,java.util.Map) -> b
+    void access$000(int,java.util.Date,java.lang.String,java.lang.String,java.util.Map) -> a
+com.bugsense.trace.BugSense$1 -> com.b.a.c:
+    void submitDone() -> a
+com.bugsense.trace.BugSense$2 -> com.b.a.d:
+    int val$sTimeout -> b
+    java.util.Date val$occuredAt -> c
+    java.lang.String val$stacktrace -> d
+    java.util.Map val$extraData -> e
+    void onPreExecute() -> onPreExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    void onCancelled() -> onCancelled
+    void processPostExecute(java.lang.Object) -> b
+com.bugsense.trace.BugSense$Processor -> com.b.a.e:
+    void submitDone() -> a
+com.bugsense.trace.BugSenseHandler -> com.b.a.f:
+    java.util.ArrayList sStackTraces -> b
+    com.bugsense.trace.ActivityAsyncTask sTask -> c
+    boolean sVerbose -> d
+    int sMinDelay -> e
+    int sTimeout -> f
+    boolean sSetupCalled -> g
+    android.content.Context gContext -> a
+    java.util.Map extraData -> h
+    boolean setup(android.content.Context,com.bugsense.trace.BugSenseHandler$Processor,java.lang.String,boolean) -> a
+    boolean setup(android.content.Context,java.lang.String) -> a
+    boolean submit(com.bugsense.trace.BugSenseHandler$Processor) -> a
+    boolean checkForRoot() -> g
+    void log(java.lang.String,java.util.Map,java.lang.Exception) -> a
+    void log(java.lang.String,java.lang.Exception) -> a
+    boolean hasStrackTraces() -> h
+    java.util.ArrayList getStackTraces() -> i
+    void submitStackTraces(java.util.ArrayList) -> b
+    void installHandler() -> j
+    java.lang.String CheckNetworkConnection(java.lang.String) -> b
+    java.lang.String isWifiOn() -> a
+    java.lang.String isMobileNetworkOn() -> b
+    java.lang.String isGPSOn() -> c
+    java.lang.String[] ScreenProperties() -> d
+    void showUpgradeNotification(java.lang.String) -> a
+    java.util.Map getExtraData() -> e
+    void access$000(java.util.ArrayList) -> a
+    int access$100() -> f
+com.bugsense.trace.BugSenseHandler$1 -> com.b.a.g:
+    boolean beginSubmit() -> a
+    void submitDone() -> b
+    void handlerInstalled() -> c
+com.bugsense.trace.BugSenseHandler$2 -> com.b.a.h:
+    long mTimeStarted -> c
+    java.util.ArrayList val$tracesNowSubmitting -> b
+    void onPreExecute() -> onPreExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    void onCancelled() -> onCancelled
+    void processPostExecute(java.lang.Object) -> b
+com.bugsense.trace.BugSenseHandler$4 -> com.b.a.i:
+    boolean accept(java.io.File,java.lang.String) -> accept
+com.bugsense.trace.BugSenseHandler$Processor -> com.b.a.j:
+    boolean beginSubmit() -> a
+    void submitDone() -> b
+    void handlerInstalled() -> c
+com.bugsense.trace.DefaultExceptionHandler -> com.b.a.k:
+    java.lang.Thread$UncaughtExceptionHandler defaultExceptionHandler -> a
+    void uncaughtException(java.lang.Thread,java.lang.Throwable) -> uncaughtException
+com.bugsense.trace.G -> com.b.a.l:
+    java.lang.String FILES_PATH -> a
+    java.lang.String APP_VERSION -> b
+    java.lang.String APP_PACKAGE -> c
+    java.lang.String URL -> d
+    java.lang.String ANALYTICS_URL -> e
+    java.lang.String TAG -> f
+    java.lang.String ANDROID_VERSION -> g
+    java.lang.String PHONE_MODEL -> h
+    java.lang.String PHONE_BRAND -> i
+    java.lang.String API_KEY -> j
+    boolean HAS_ROOT -> k
+    java.lang.String TraceVersion -> l
+    boolean SEND_ANALYTICS -> m
+    boolean SEND_LOG -> n
+    java.lang.String LOG_FILTER -> o
+    int LOG_LINES -> p

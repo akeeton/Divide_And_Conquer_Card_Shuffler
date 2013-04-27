@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<integer name="pile_empty">0</integer>
+	<integer name="pile_not_empty">1</integer>
+	<integer name="pile_transition">2</integer>
+	<integer name="arrows_nothing">8</integer>
+	<integer name="arrows_countdown_3">9</integer>
+	<integer name="arrows_countdown_2">10</integer>
+	<integer name="arrows_countdown_1">11</integer>
+	<integer name="arrow_pickup_down">0</integer>
+	<integer name="arrow_pickup_down_under">1</integer>
+
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<item
+		android:drawable="@drawable/ic_pile_empty"
+		android:maxLevel="@integer/pile_empty"/>
+	<item
+		android:drawable="@drawable/ic_pile_unselected"
+		android:maxLevel="@integer/pile_not_empty"/>
+	<item
+		android:drawable="@drawable/transition_pile"
+		android:maxLevel="@integer/pile_transition"/>
+
+</level-list>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- Used to avoid com.android.internal.R reference. -->
+	<declare-styleable name="RadioGroupRelative">
+		<attr name="android:checkedButton" />
+	</declare-styleable>
+
+</resources>

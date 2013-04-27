@@ -1,0 +1,23 @@
+<resources>
+
+	<dimen name="padding_small">4dp</dimen>
+	<dimen name="padding_medium">14dp</dimen>
+	<dimen name="padding_large">32dp</dimen>
+	<dimen name="margin_small">8dp</dimen>
+	<dimen name="margin_medium">16dp</dimen>
+	<dimen name="margin_large">32dp</dimen>
+	<dimen name="margin_indent_level1">32dp</dimen>
+	<dimen name="margin_indent_level0">16dp</dimen>
+	<dimen name="text_size_micro">12sp</dimen>
+	<dimen name="text_size_small">14sp</dimen>
+	<dimen name="text_size_medium">22sp</dimen>
+	<dimen name="text_size_large">32sp</dimen>
+	<dimen name="min_touchable">48dp</dimen>
+	<dimen name="textviewstyle_pilenumber_margin_left">9dp</dimen>
+	<dimen name="textviewstyle_pilenumber_margin_top">3dp</dimen>
+	<dimen name="textviewstyle_pilecount_margin_right">7dp</dimen>
+	<dimen name="textviewstyle_pilecount_margin_bottom">0dp</dimen>
+	<dimen name="textviewstyle_bottomamount_margin_left">4dp</dimen>
+	<dimen name="textviewstyle_bottomamount_margin_top">30dp</dimen>
+
+</resources>

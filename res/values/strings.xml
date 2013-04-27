@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<string name="app_short_name">D&amp;C Shuffler</string>
+	<string name="app_name">Divide and Conquer Card Shuffler</string>
+	<string name="Settings">Settings</string>
+	<string name="Donate">Donate $1</string>
+
+	<!-- fragment_setup.xml -->
+	<string name="Deck_size">Deck size</string>
+	<string name="default_deck_size">52</string>
+	<string name="Speed">Speed</string>
+	<string name="Preset">Preset</string>
+	<string name="default_custom_speed">90</string>
+	<string name="Choose_a_speed">Choose a speed</string>
+	<string name="custom_speed">Custom (cards/min)</string>
+	<string name="Speed_preview">Speed preview</string>
+	<string name="New">New</string>
+	<string name="Estimated_time">Estimated time</string>
+	<string name="min">min</string>
+
+	<!-- SetupFragment.java -->
+	<!-- Must match the order of the Speeds enum in SetupFragment.java. -->
+	<string-array name="speeds">
+		<item>Fast</item>
+		<item>Medium</item>
+		<item>Slow</item>
+	</string-array>
+
+	<string name="deck_size_warning">Deck size must be at least 2</string>
+	<string name="speed_warning">Speed must be non-zero</string>
+
+	<!-- fragment_shuffler.xml -->
+	<string name="starting_pile_count">0</string>
+	<string name="content_desc_arrows_area">Directional arrows</string>
+	<string name="content_desc_arrow_pickup">Pickup arrow</string>
+	<string name="content_desc_arrow_bottom">Bottom arrow</string>
+	<string name="pile_number_1">#1</string>
+	<string name="pile_number_2">#2</string>
+	<string name="pile_number_3">#3</string>
+	<string name="pile_number_4">#4</string>
+	<string name="pile_number_5">#5</string>
+	<string name="pile_number_6">#6</string>
+	<string name="pile_number_7">#7</string>
+	<string name="pile_number_8">#8</string>
+	<string name="desc_pile1">Pile 1</string>
+	<string name="desc_pile2">Pile 2</string>
+	<string name="desc_pile3">Pile 3</string>
+	<string name="desc_pile4">Pile 4</string>
+	<string name="desc_pile5">Pile 5</string>
+	<string name="desc_pile6">Pile 6</string>
+	<string name="desc_pile7">Pile 7</string>
+	<string name="desc_pile8">Pile 8</string>
+	<string name="desc_deck">Deck</string>
+	<string name="Deck">Deck</string>
+	<string name="Start">Start</string>
+	<string name="ok">@android:string/ok</string>
+	<string name="Pause">Pause</string>
+	<string name="Resume">Resume</string>
+	<string name="Continue">Continue</string>
+	<string name="Done">Done</string>
+	<string name="done">done</string>
+	<string name="deal">deal</string>
+	<string name="pick_up">pick up</string>
+	<string name="bottom">bottom</string>
+	<string name="paused">paused</string>
+	<string name="Shufflingellipsis">Shuffling&#8230;</string>
+
+	<!-- linearlayout_dialog_instructions.xml -->
+	<string name="title_instructions_begin">Before you begin</string>
+	<string name="msg_instructions_begin">Place the device in front of you.\n\nFollow the arrow and put a card in each pile it points to.</string>
+	<string name="title_instructions_pickup">Pick up</string>
+	<string name="msg_instructions_pickup">Pick up the piles so that #1 is on top and #8 is on the bottom.\n\nThis time, put the cards under the rest of the deck.</string>
+	<string name="msg_instructions_pickup_no_deck">Pick up the piles so that #1 is on top and #8 is on the bottom.\n\nThis is now the deck.</string>
+	<string name="title_instructions_bottom">Bottom</string>
+
+	<plurals name="msg_instructions_bottom">
+		<item quantity="one">Take the top card of the deck and move it to the bottom.</item>
+		<item quantity="other">Take the top %d cards of the deck and move them to the bottom.</item>
+	</plurals>
+
+	<!-- preferences.xml -->
+	<string name="pref_sound">Sound effects</string>
+	<string name="pref_tutorial">Tutorial</string>
+	<string name="pref_tutorial_summary">Show instructions during use</string>
+
+</resources>

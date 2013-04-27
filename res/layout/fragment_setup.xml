@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/RelativeLayoutFragmentSetup"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:descendantFocusability="beforeDescendants"
+	android:focusableInTouchMode="true" >
+
+	<LinearLayout
+		android:id="@+id/LinearLayoutDeckSize"
+		style="@style/LinearLayoutStyle.Heading0"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:gravity="center_vertical" >
+
+		<TextView
+			android:id="@+id/TextViewDeckSize"
+			style="@style/TextViewStyle.Heading0"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/Deck_size" />
+
+		<EditText
+			android:id="@+id/EditTextDeckSize"
+			style="@style/EditTextStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:imeOptions="actionDone"
+			android:inputType="number"
+			android:maxLength="3"
+			android:selectAllOnFocus="true"
+			android:text="@string/default_deck_size" />
+	</LinearLayout> <!-- LinearLayoutDeckSize -->
+
+	<RelativeLayout
+		android:id="@+id/RelativeLayoutSpeed"
+		style="@style/LinearLayoutStyle.Heading0"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_below="@+id/LinearLayoutDeckSize"
+		android:padding="0dp" >
+
+		<LinearLayout
+			android:id="@+id/LinearLayoutSpeed"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:gravity="bottom" >
+
+			<TextView
+				android:id="@+id/TextViewSpeed"
+				style="@style/TextViewStyle.Heading0"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/Speed" />
+		</LinearLayout> <!-- LinearLayoutSpeed -->
+
+		<LinearLayout
+			android:id="@+id/LinearLayoutPresetSpeed"
+			style="@style/LinearLayoutStyle.Heading1"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_below="@+id/LinearLayoutSpeed"
+			android:layout_marginRight="0dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal" >
+
+			<RadioButton
+				android:id="@+id/RadioButtonPresetSpeed"
+				style="@style/RadioButtonStyle.Heading1"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:checked="true"
+				android:ellipsize="marquee"
+				android:text="@string/Preset" />
+
+			<Spinner
+				android:id="@+id/SpinnerPresetSpeed"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="right"
+				android:prompt="@string/Choose_a_speed" />
+		</LinearLayout> <!-- LinearLayoutPresetSpeed -->
+
+		<LinearLayout
+			android:id="@+id/LinearLayoutCustomSpeed"
+			style="@style/LinearLayoutStyle.Heading1"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_below="@+id/LinearLayoutPresetSpeed"
+			android:layout_marginRight="0dp"
+			android:gravity="center_vertical" >
+
+			<RadioButton
+				android:id="@+id/RadioButtonCustomSpeed"
+				style="@style/RadioButtonStyle.Heading1"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:ellipsize="marquee"
+				android:text="@string/custom_speed" />
+
+			<EditText
+				android:id="@+id/EditTextCustomSpeed"
+				style="@style/EditTextStyle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:enabled="false"
+				android:imeOptions="actionDone"
+				android:inputType="number"
+				android:maxLength="3"
+				android:selectAllOnFocus="true"
+				android:text="@string/default_custom_speed" />
+		</LinearLayout> <!-- LinearLayoutCustomSpeed -->
+
+	</RelativeLayout> <!-- RelativeLayoutSpeed -->
+
+	<LinearLayout
+		android:id="@+id/LinearLayoutEstimatedTime"
+		style="@style/LinearLayoutStyle.Heading0"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_below="@+id/RelativeLayoutSpeed"
+		android:gravity="center_vertical" >
+
+		<TextView
+			android:id="@+id/TextViewEstimatedTimeLabel"
+			style="@style/TextViewStyle.Heading0"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/Estimated_time" />
+
+		<TextView
+			android:id="@+id/TextViewEstimatedTime"
+			style="@style/TextViewStyle.Heading0"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/min" />
+	</LinearLayout> <!-- LinearLayoutEstimatedTime -->
+
+	<LinearLayout
+		android:id="@+id/LinearLayoutSetupButtons"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true" >
+
+		<Button
+			android:id="@+id/ButtonResume"
+			style="@style/ButtonStyle.Large"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/margin_small"
+			android:layout_marginLeft="@dimen/margin_small"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:nextFocusDown="@+id/EditTextDeckSize"
+			android:text="@string/Resume" />
+
+		<Button
+			android:id="@+id/ButtonNew"
+			style="@style/ButtonStyle.Large"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/margin_small"
+			android:layout_marginRight="@dimen/margin_small"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:nextFocusDown="@+id/EditTextDeckSize"
+			android:text="@string/New" />
+	</LinearLayout> <!-- LinearLayoutSetupButtons -->
+
+</RelativeLayout> <!-- RelativeLayoutFragmentSetup -->

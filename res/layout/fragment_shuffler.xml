@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/RelativeLayoutFragmentShuffler"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+
+	<RelativeLayout
+		android:id="@+id/RelativeLayoutShufflerContent"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true" >
+
+		<RelativeLayout
+			android:id="@+id/RelativeLayoutArrowsArea"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/RelativeLayoutPile3"
+			android:layout_centerHorizontal="true" >
+
+			<ImageView
+				android:id="@+id/ImageViewArrowsArea"
+				style="@style/ImageViewStyle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:contentDescription="@string/content_desc_arrows_area"
+				android:src="@drawable/level_list_shuffler_arrows_area" />
+		</RelativeLayout>
+		<!-- RelativeLayoutArrowsArea -->
+
+		<RelativeLayout
+			android:id="@+id/RelativeLayoutPile1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_above="@+id/RelativeLayoutPile8"
+			android:layout_below="@+id/RelativeLayoutPile2"
+			android:layout_centerVertical="true"
+			android:layout_toLeftOf="@+id/RelativeLayoutArrowsArea" >
+
+			<ImageView
+				android:id="@+id/ImageViewPile1"
+				style="@style/ImageViewStyle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:contentDescription="@string/desc_pile1"
+				android:src="@drawable/level_list_shuffler_pile" />
+
+			<TextView
+				android:id="@+id/TextViewPileNumber1"
+				style="@style/TextViewStyle.Shadow.Medium.PileNumber"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignLeft="@+id/ImageViewPile1"
+				android:layout_alignTop="@+id/ImageViewPile1"
+				android:focusable="false"
+				android:text="@string/pile_number_1" />
+
+			<TextView
+				android:id="@+id/TextViewPileSize1"
+				style="@style/TextViewStyle.Shadow.Large.PileCount"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/ImageViewPile1"
+				android:layout_alignRight="@+id/ImageViewPile1"
+				android:focusable="false"
+				android:text="@string/starting_pile_count" />
+		</RelativeLayout>
+		<!-- RelativeLayoutPile1 -->
+
+		<RelativeLayout
+			android:id="@+id/RelativeLayoutPile2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_above="@id/RelativeLayoutArrowsArea"
+			android:layout_toLeftOf="@id/RelativeLayoutArrowsArea" >
+
+			<ImageView
+				android:id="@+id/ImageViewPile2"
+				style="@style/ImageViewStyle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:contentDescription="@string/desc_pile2"
+				android:src="@drawable/level_list_shuffler_pile" />
+
+			<TextView
+				android:id="@+id/TextViewPileNumber2"
+				style="@style/TextViewStyle.Shadow.Medium.PileNumber"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignLeft="@+id/ImageViewPile2"
+				android:layout_alignTop="@+id/ImageViewPile2"
+				android:focusable="false"
+				android:text="@string/pile_number_2" />
+
+			<TextView
+				android:id="@+id/TextViewPileSize2"
+				style="@style/TextViewStyle.Shadow.Large.PileCount"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/ImageViewPile2"
+				android:layout_alignRight="@+id/ImageViewPile2"
+				android:focusable="false"
+				android:text="@string/starting_pile_count" />
+		</RelativeLayout>
+		<!-- RelativeLayoutPile2 -->
+
+		<ImageView
+			android:id="@+id/ImageViewPickupArrow1"
+			style="@style/ImageViewStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/RelativeLayoutPile1"
+			android:layout_alignTop="@+id/RelativeLayoutPile2"
+			android:alpha="@color/arrow_pickup_alpha"
+			android:contentDescription="@string/content_desc_arrow_pickup"
+			android:src="@drawable/ic_arrow_pickup_up" />
+
+		<RelativeLayout
+			android:id="@+id/RelativeLayoutPile3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true" >
+
+			<ImageView
+				android:id="@+id/ImageViewPile3"
+				style="@style/ImageViewStyle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:contentDescription="@string/desc_pile3"
+				android:src="@drawable/level_list_shuffler_pile" />
+
+			<TextView
+				android:id="@+id/TextViewPileNumber3"
+				style="@style/TextViewStyle.Shadow.Medium.PileNumber"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignLeft="@+id/ImageViewPile3"
+				android:layout_alignTop="@+id/ImageViewPile3"
+				android:focusable="false"
+				android:text="@string/pile_number_3" />
+
+			<TextView
+				android:id="@+id/TextViewPileSize3"
+				style="@style/TextViewStyle.Shadow.Large.PileCount"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/ImageViewPile3"
+				android:layout_alignRight="@+id/ImageViewPile3"
+				android:focusable="false"
+				android:text="@string/starting_pile_count" />
+		</RelativeLayout>
+		<!-- RelativeLayoutPile3 -->
+
+		<ImageView
+			android:id="@+id/ImageViewPickupArrow2"
+			style="@style/ImageViewStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/RelativeLayoutPile2"
+			android:alpha="@color/arrow_pickup_alpha"
+			android:contentDescription="@string/content_desc_arrow_pickup"
+			android:src="@drawable/ic_arrow_pickup_right" />
+
+		<RelativeLayout
+			android:id="@+id/RelativeLayoutPile4"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_above="@+id/RelativeLayoutArrowsArea"
+			android:layout_toRightOf="@+id/RelativeLayoutArrowsArea" >
+
+			<ImageView
+				android:id="@+id/ImageViewPile4"
+				style="@style/ImageViewStyle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:contentDescription="@string/desc_pile4"
+				android:src="@drawable/level_list_shuffler_pile" />
+
+			<TextView
+				android:id="@+id/TextViewPileNumber4"
+				style="@style/TextViewStyle.Shadow.Medium.PileNumber"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignLeft="@+id/ImageViewPile4"
+				android:layout_alignTop="@+id/ImageViewPile4"
+				android:focusable="false"
+				android:text="@string/pile_number_4" />
+
+			<TextView
+				android:id="@+id/TextViewPileSize4"
+				style="@style/TextViewStyle.Shadow.Large.PileCount"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/ImageViewPile4"
+				android:layout_alignRight="@+id/ImageViewPile4"
+				android:focusable="false"
+				android:text="@string/starting_pile_count" />
+		</RelativeLayout>
+		<!-- RelativeLayoutPile4 -->
+
+		<ImageView
+			android:id="@+id/ImageViewPickupArrow3"
+			style="@style/ImageViewStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/RelativeLayoutPile3"
+			android:alpha="@color/arrow_pickup_alpha"
+			android:contentDescription="@string/content_desc_arrow_pickup"
+			android:src="@drawable/ic_arrow_pickup_right" />
+
+		<RelativeLayout
+			android:id="@+id/RelativeLayoutPile5"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_above="@+id/RelativeLayoutPile6"
+			android:layout_below="@+id/RelativeLayoutPile4"
+			android:layout_toRightOf="@+id/RelativeLayoutArrowsArea" >
+
+			<ImageView
+				android:id="@+id/ImageViewPile5"
+				style="@style/ImageViewStyle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:contentDescription="@string/desc_pile5"
+				android:src="@drawable/level_list_shuffler_pile" />
+
+			<TextView
+				android:id="@+id/TextViewPileNumber5"
+				style="@style/TextViewStyle.Shadow.Medium.PileNumber"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignLeft="@+id/ImageViewPile5"
+				android:layout_alignTop="@+id/ImageViewPile5"
+				android:focusable="false"
+				android:text="@string/pile_number_5" />
+
+			<TextView
+				android:id="@+id/TextViewPileSize5"
+				style="@style/TextViewStyle.Shadow.Large.PileCount"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/ImageViewPile5"
+				android:layout_alignRight="@+id/ImageViewPile5"
+				android:focusable="false"
+				android:text="@string/starting_pile_count" />
+		</RelativeLayout>
+		<!-- RelativeLayoutPile5 -->
+
+		<ImageView
+			android:id="@+id/ImageViewPickupArrow4"
+			style="@style/ImageViewStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/RelativeLayoutPile4"
+			android:layout_alignTop="@+id/RelativeLayoutPile4"
+			android:alpha="@color/arrow_pickup_alpha"
+			android:contentDescription="@string/content_desc_arrow_pickup"
+			android:src="@drawable/ic_arrow_pickup_down" />
+
+		<RelativeLayout
+			android:id="@+id/RelativeLayoutPile6"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/RelativeLayoutArrowsArea"
+			android:layout_toRightOf="@+id/RelativeLayoutArrowsArea" >
+
+			<ImageView
+				android:id="@+id/ImageViewPile6"
+				style="@style/ImageViewStyle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:contentDescription="@string/desc_pile6"
+				android:src="@drawable/level_list_shuffler_pile" />
+
+			<TextView
+				android:id="@+id/TextViewPileNumber6"
+				style="@style/TextViewStyle.Shadow.Medium.PileNumber"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignLeft="@+id/ImageViewPile6"
+				android:layout_alignTop="@+id/ImageViewPile6"
+				android:focusable="false"
+				android:text="@string/pile_number_6" />
+
+			<TextView
+				android:id="@+id/TextViewPileSize6"
+				style="@style/TextViewStyle.Shadow.Large.PileCount"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/ImageViewPile6"
+				android:layout_alignRight="@+id/ImageViewPile6"
+				android:focusable="false"
+				android:text="@string/starting_pile_count" />
+		</RelativeLayout>
+		<!-- RelativeLayoutPile6 -->
+
+		<ImageView
+			android:id="@+id/ImageViewPickupArrow5"
+			style="@style/ImageViewStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/RelativeLayoutPile6"
+			android:layout_alignLeft="@+id/RelativeLayoutPile6"
+			android:alpha="@color/arrow_pickup_alpha"
+			android:contentDescription="@string/content_desc_arrow_pickup"
+			android:src="@drawable/ic_arrow_pickup_down" />
+
+		<RelativeLayout
+			android:id="@+id/RelativeLayoutPile7"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/RelativeLayoutArrowsArea"
+			android:layout_centerHorizontal="true" >
+
+			<ImageView
+				android:id="@+id/ImageViewPile7"
+				style="@style/ImageViewStyle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:contentDescription="@string/desc_pile7"
+				android:src="@drawable/level_list_shuffler_pile" />
+
+			<TextView
+				android:id="@+id/TextViewPileNumber7"
+				style="@style/TextViewStyle.Shadow.Medium.PileNumber"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignLeft="@+id/ImageViewPile7"
+				android:layout_alignTop="@+id/ImageViewPile7"
+				android:focusable="false"
+				android:text="@string/pile_number_7" />
+
+			<TextView
+				android:id="@+id/TextViewPileSize7"
+				style="@style/TextViewStyle.Shadow.Large.PileCount"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/ImageViewPile7"
+				android:layout_alignRight="@+id/ImageViewPile7"
+				android:focusable="false"
+				android:text="@string/starting_pile_count" />
+		</RelativeLayout>
+		<!-- RelativeLayoutPile7 -->
+
+		<ImageView
+			android:id="@+id/ImageViewPickupArrow6"
+			style="@style/ImageViewStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignRight="@+id/RelativeLayoutPile6"
+			android:layout_alignTop="@+id/RelativeLayoutPile6"
+			android:alpha="@color/arrow_pickup_alpha"
+			android:contentDescription="@string/content_desc_arrow_pickup"
+			android:src="@drawable/ic_arrow_pickup_left" />
+
+		<RelativeLayout
+			android:id="@+id/RelativeLayoutPile8"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/RelativeLayoutArrowsArea"
+			android:layout_toLeftOf="@+id/RelativeLayoutArrowsArea" >
+
+			<ImageView
+				android:id="@+id/ImageViewPile8"
+				style="@style/ImageViewStyle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:contentDescription="@string/desc_pile8"
+				android:src="@drawable/level_list_shuffler_pile" />
+
+			<TextView
+				android:id="@+id/TextViewPileNumber8"
+				style="@style/TextViewStyle.Shadow.Medium.PileNumber"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignLeft="@+id/ImageViewPile8"
+				android:layout_alignTop="@+id/ImageViewPile8"
+				android:focusable="false"
+				android:text="@string/pile_number_8" />
+
+			<TextView
+				android:id="@+id/TextViewPileSize8"
+				style="@style/TextViewStyle.Shadow.Large.PileCount"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/ImageViewPile8"
+				android:layout_alignRight="@+id/ImageViewPile8"
+				android:focusable="false"
+				android:text="@string/starting_pile_count" />
+		</RelativeLayout>
+		<!-- RelativeLayoutPile8 -->
+
+		<ImageView
+			android:id="@+id/ImageViewPickupArrow7"
+			style="@style/ImageViewStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignRight="@+id/RelativeLayoutPile7"
+			android:layout_alignTop="@+id/RelativeLayoutPile7"
+			android:alpha="@color/arrow_pickup_alpha"
+			android:contentDescription="@string/content_desc_arrow_pickup"
+			android:src="@drawable/ic_arrow_pickup_left" />
+
+		<ImageView
+			android:id="@+id/ImageViewPickupArrow8Under"
+			style="@style/ImageViewStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/RelativeLayoutPile8"
+			android:layout_alignTop="@+id/RelativeLayoutPile8"
+			android:alpha="@color/arrow_pickup_alpha"
+			android:contentDescription="@string/content_desc_arrow_pickup"
+			android:src="@drawable/ic_arrow_pickup_down_under" />
+
+		<RelativeLayout
+			android:id="@+id/RelativeLayoutDeck"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/RelativeLayoutPile8"
+			android:layout_below="@+id/RelativeLayoutPile8"
+			android:layout_marginTop="@dimen/pile_vertical_gap" >
+
+			<ImageView
+				android:id="@+id/ImageViewBottomArrowBelow"
+				style="@style/ImageViewStyle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentTop="true"
+				android:contentDescription="@string/content_desc_arrow_bottom"
+				android:src="@drawable/ic_arrow_bottom_below" />
+
+			<ImageView
+				android:id="@+id/ImageViewDeck"
+				style="@style/ImageViewStyle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:contentDescription="@string/desc_deck"
+				android:src="@drawable/level_list_shuffler_pile" />
+
+			<TextView
+				android:id="@+id/TextViewDeck"
+				style="@style/TextViewStyle.Shadow.Medium.PileNumber"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignLeft="@+id/ImageViewDeck"
+				android:layout_alignRight="@+id/ImageViewDeck"
+				android:layout_alignTop="@+id/ImageViewDeck"
+				android:layout_marginLeft="0dp"
+				android:layout_marginRight="0dp"
+				android:layout_marginTop="@dimen/textviewstyle_pilenumber_margin_top"
+				android:gravity="center"
+				android:text="@string/Deck" />
+
+			<TextView
+				android:id="@+id/TextViewDeckSize"
+				style="@style/TextViewStyle.Shadow.Large.PileCount"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/ImageViewDeck"
+				android:layout_alignRight="@+id/ImageViewDeck"
+				android:focusable="false"
+				android:text="@string/starting_pile_count" />
+
+			<ImageView
+				android:id="@+id/ImageViewBottomArrowAbove"
+				style="@style/ImageViewStyle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentTop="true"
+				android:contentDescription="@string/content_desc_arrow_bottom"
+				android:src="@drawable/ic_arrow_bottom_above" />
+
+			<TextView
+				android:id="@+id/TextViewBottomAmount"
+				style="@style/TextViewStyle.Shadow.Large.BottomAmount"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_toRightOf="@+id/ImageViewDeck"
+				android:focusable="false"
+				android:text="@string/starting_pile_count" />
+		</RelativeLayout>
+		<!-- RelativeLayoutDeck -->
+
+		<ImageView
+			android:id="@+id/ImageViewPickupArrow8Above"
+			style="@style/ImageViewStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/RelativeLayoutPile8"
+			android:layout_alignTop="@+id/RelativeLayoutPile8"
+			android:alpha="@color/arrow_pickup_alpha"
+			android:contentDescription="@string/content_desc_arrow_pickup"
+			android:src="@drawable/ic_arrow_pickup_down" />
+
+		<Button
+			android:id="@+id/ButtonShufflerControl"
+			style="@style/ButtonStyle.Large"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/RelativeLayoutDeck"
+			android:layout_alignRight="@+id/RelativeLayoutPile6"
+			android:layout_alignTop="@+id/RelativeLayoutDeck"
+			android:layout_marginLeft="@dimen/margin_small"
+			android:layout_toRightOf="@+id/RelativeLayoutDeck"
+			android:text="@string/Start" />
+	</RelativeLayout>
+	<!-- RelativeLayoutShufflerContent -->
+
+	<com.andrewkeeton.divide.and.conquer.card.shuffler.AutoResizeTextView
+		android:id="@+id/TextViewState"
+		style="@style/TextViewStyle.Large"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:gravity="center"
+		android:maxLines="1"
+		android:text="@string/paused"
+		android:textColor="@color/holo_green_light"
+		android:textStyle="bold" />
+
+</RelativeLayout> <!-- RelativeLayoutFragmentShuffler -->
