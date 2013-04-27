@@ -1,7 +1,5 @@
-Divide_And_Conquer_Card_Shuffler
+Divide And Conquer Card Shuffler
 ================================
-
-Card shuffling Android app
 
 [Google Play page](https://play.google.com/store/apps/details?id=com.andrewkeeton.divide.and.conquer.card.shuffler)
 
